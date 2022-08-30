@@ -1,0 +1,1 @@
+gcc -std=c11 -g -Wall numconv.c testConv.c -o testConv

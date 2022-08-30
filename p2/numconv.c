@@ -1,6 +1,8 @@
-/**
- *  @author  your name goes here
- */
+// P2 Assignment
+// Author: Aidan Michalos
+// Date:   8/30/2022
+// Class:  CS270
+// Email:  aidanmih@colostate.edu
 
 #include <stdio.h>
 
@@ -8,6 +10,7 @@
  *  in <code>numconv.h</code>.
  */
 char int_to_char (int value, int radix) {
+  
   return '?';
 }
 
