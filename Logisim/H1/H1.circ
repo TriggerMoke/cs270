@@ -240,37 +240,6 @@
     <wire from="(210,960)" to="(210,1020)"/>
     <wire from="(300,1040)" to="(370,1040)"/>
     <wire from="(210,1080)" to="(210,1140)"/>
-    <comp lib="1" loc="(420,520)" name="AND Gate">
-      <a name="inputs" val="4"/>
-    </comp>
-    <comp lib="1" loc="(420,580)" name="AND Gate">
-      <a name="inputs" val="4"/>
-    </comp>
-    <comp lib="0" loc="(790,180)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="E"/>
-      <a name="labelloc" val="north"/>
-      <a name="labelfont" val="DejaVu Sans plain 12"/>
-    </comp>
-    <comp lib="0" loc="(730,180)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="C"/>
-      <a name="labelloc" val="north"/>
-      <a name="labelfont" val="DejaVu Sans plain 12"/>
-    </comp>
-    <comp lib="1" loc="(420,700)" name="AND Gate">
-      <a name="inputs" val="4"/>
-    </comp>
-    <comp lib="1" loc="(420,1060)" name="AND Gate">
-      <a name="inputs" val="4"/>
-    </comp>
-    <comp lib="1" loc="(420,880)" name="AND Gate">
-      <a name="inputs" val="4"/>
-    </comp>
     <comp lib="0" loc="(760,180)" name="Pin">
       <a name="facing" val="south"/>
       <a name="output" val="true"/>
@@ -285,17 +254,123 @@
       <a name="label" val="I3"/>
       <a name="labelloc" val="north"/>
     </comp>
-    <comp lib="0" loc="(820,180)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="F"/>
-      <a name="labelloc" val="north"/>
-      <a name="labelfont" val="DejaVu Sans plain 12"/>
-    </comp>
     <comp lib="6" loc="(597,229)" name="Text">
       <a name="text" val="From your logic"/>
       <a name="font" val="DejaVu Sans plain 12"/>
+    </comp>
+    <comp lib="1" loc="(420,280)" name="AND Gate">
+      <a name="inputs" val="4"/>
+    </comp>
+    <comp lib="6" loc="(348,229)" name="Text">
+      <a name="text" val="To your logic"/>
+      <a name="font" val="DejaVu Sans plain 12"/>
+    </comp>
+    <comp lib="6" loc="(25,123)" name="Text">
+      <a name="text" val="Do not introduce any other input or output pins."/>
+      <a name="font" val="DejaVu Sans plain 12"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(24,77)" name="Text">
+      <a name="text" val="INPUT SECTION: Do not change anything here!"/>
+      <a name="font" val="DejaVu Sans bold 18"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="0" loc="(1000,180)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="L"/>
+      <a name="labelloc" val="north"/>
+      <a name="labelfont" val="DejaVu Sans plain 12"/>
+    </comp>
+    <comp lib="0" loc="(880,180)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="H"/>
+      <a name="labelloc" val="north"/>
+      <a name="labelfont" val="DejaVu Sans plain 12"/>
+    </comp>
+    <comp lib="0" loc="(1090,180)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="O"/>
+      <a name="labelloc" val="north"/>
+      <a name="labelfont" val="DejaVu Sans plain 12"/>
+    </comp>
+    <comp lib="1" loc="(290,260)" name="NOT Gate">
+      <a name="facing" val="south"/>
+    </comp>
+    <comp lib="1" loc="(420,460)" name="AND Gate">
+      <a name="inputs" val="4"/>
+    </comp>
+    <comp lib="1" loc="(420,760)" name="AND Gate">
+      <a name="inputs" val="4"/>
+    </comp>
+    <comp lib="0" loc="(910,180)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="I"/>
+      <a name="labelloc" val="north"/>
+      <a name="labelfont" val="DejaVu Sans plain 12"/>
+    </comp>
+    <comp lib="1" loc="(420,700)" name="AND Gate">
+      <a name="inputs" val="4"/>
+    </comp>
+    <comp lib="6" loc="(25,101)" name="Text">
+      <a name="text" val="You may only change the values of the inputs for testing using the hand tool."/>
+      <a name="font" val="DejaVu Sans plain 12"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="1" loc="(420,1060)" name="AND Gate">
+      <a name="inputs" val="4"/>
+    </comp>
+    <comp lib="1" loc="(420,1000)" name="AND Gate">
+      <a name="inputs" val="4"/>
+    </comp>
+    <comp lib="1" loc="(420,580)" name="AND Gate">
+      <a name="inputs" val="4"/>
+    </comp>
+    <comp lib="0" loc="(270,180)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="I1"/>
+      <a name="labelloc" val="north"/>
+      <a name="labelfont" val="DejaVu Sans plain 12"/>
+    </comp>
+    <comp lib="1" loc="(420,640)" name="AND Gate">
+      <a name="inputs" val="4"/>
+    </comp>
+    <comp lib="6" loc="(596,77)" name="Text">
+      <a name="text" val="OUTPUT SECTION: Do not change anything here!"/>
+      <a name="font" val="DejaVu Sans bold 18"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="0" loc="(1060,180)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="N"/>
+      <a name="labelloc" val="north"/>
+      <a name="labelfont" val="DejaVu Sans plain 12"/>
+    </comp>
+    <comp lib="0" loc="(940,180)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="J"/>
+      <a name="labelloc" val="north"/>
+      <a name="labelfont" val="DejaVu Sans plain 12"/>
+    </comp>
+    <comp lib="0" loc="(730,180)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="C"/>
+      <a name="labelloc" val="north"/>
+      <a name="labelfont" val="DejaVu Sans plain 12"/>
     </comp>
     <comp lib="0" loc="(700,180)" name="Pin">
       <a name="facing" val="south"/>
@@ -305,14 +380,14 @@
       <a name="labelloc" val="north"/>
       <a name="labelfont" val="DejaVu Sans plain 12"/>
     </comp>
-    <comp lib="1" loc="(230,260)" name="NOT Gate">
-      <a name="facing" val="south"/>
+    <comp lib="1" loc="(420,520)" name="AND Gate">
+      <a name="inputs" val="4"/>
     </comp>
-    <comp lib="0" loc="(1060,180)" name="Pin">
+    <comp lib="0" loc="(1030,180)" name="Pin">
       <a name="facing" val="south"/>
       <a name="output" val="true"/>
       <a name="tristate" val="false"/>
-      <a name="label" val="N"/>
+      <a name="label" val="M"/>
       <a name="labelloc" val="north"/>
       <a name="labelfont" val="DejaVu Sans plain 12"/>
     </comp>
@@ -324,20 +399,6 @@
       <a name="labelloc" val="north"/>
       <a name="labelfont" val="DejaVu Sans plain 12"/>
     </comp>
-    <comp lib="1" loc="(200,260)" name="NOT Gate">
-      <a name="facing" val="south"/>
-    </comp>
-    <comp lib="1" loc="(420,940)" name="AND Gate">
-      <a name="inputs" val="4"/>
-    </comp>
-    <comp lib="6" loc="(23,32)" name="Text">
-      <a name="text" val="PROBLEM 1: DECODER"/>
-      <a name="font" val="DejaVu Sans bold 18"/>
-      <a name="halign" val="left"/>
-    </comp>
-    <comp lib="1" loc="(420,400)" name="AND Gate">
-      <a name="inputs" val="4"/>
-    </comp>
     <comp lib="0" loc="(300,180)" name="Pin">
       <a name="facing" val="south"/>
       <a name="tristate" val="false"/>
@@ -345,85 +406,10 @@
       <a name="labelloc" val="north"/>
       <a name="labelfont" val="DejaVu Sans plain 12"/>
     </comp>
-    <comp lib="1" loc="(420,460)" name="AND Gate">
-      <a name="inputs" val="4"/>
-    </comp>
-    <comp lib="6" loc="(25,101)" name="Text">
-      <a name="text" val="You may only change the values of the inputs for testing using the hand tool."/>
-      <a name="font" val="DejaVu Sans plain 12"/>
-      <a name="halign" val="left"/>
-    </comp>
-    <comp lib="0" loc="(1000,180)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="L"/>
-      <a name="labelloc" val="north"/>
-      <a name="labelfont" val="DejaVu Sans plain 12"/>
-    </comp>
     <comp lib="0" loc="(240,180)" name="Pin">
       <a name="facing" val="south"/>
       <a name="tristate" val="false"/>
       <a name="label" val="I2"/>
-      <a name="labelloc" val="north"/>
-      <a name="labelfont" val="DejaVu Sans plain 12"/>
-    </comp>
-    <comp lib="6" loc="(599,101)" name="Text">
-      <a name="text" val="Do not introduce any other input or output pins."/>
-      <a name="font" val="DejaVu Sans plain 12"/>
-      <a name="halign" val="left"/>
-    </comp>
-    <comp lib="0" loc="(880,180)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="H"/>
-      <a name="labelloc" val="north"/>
-      <a name="labelfont" val="DejaVu Sans plain 12"/>
-    </comp>
-    <comp lib="1" loc="(420,640)" name="AND Gate">
-      <a name="inputs" val="4"/>
-    </comp>
-    <comp lib="0" loc="(270,180)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="I1"/>
-      <a name="labelloc" val="north"/>
-      <a name="labelfont" val="DejaVu Sans plain 12"/>
-    </comp>
-    <comp lib="0" loc="(1030,180)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="M"/>
-      <a name="labelloc" val="north"/>
-      <a name="labelfont" val="DejaVu Sans plain 12"/>
-    </comp>
-    <comp lib="1" loc="(420,1180)" name="AND Gate">
-      <a name="inputs" val="4"/>
-    </comp>
-    <comp lib="0" loc="(1090,180)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="O"/>
-      <a name="labelloc" val="north"/>
-      <a name="labelfont" val="DejaVu Sans plain 12"/>
-    </comp>
-    <comp lib="1" loc="(420,760)" name="AND Gate">
-      <a name="inputs" val="4"/>
-    </comp>
-    <comp lib="1" loc="(260,260)" name="NOT Gate">
-      <a name="facing" val="south"/>
-    </comp>
-    <comp lib="1" loc="(420,1000)" name="AND Gate">
-      <a name="inputs" val="4"/>
-    </comp>
-    <comp lib="0" loc="(850,180)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="G"/>
       <a name="labelloc" val="north"/>
       <a name="labelfont" val="DejaVu Sans plain 12"/>
     </comp>
@@ -435,32 +421,39 @@
       <a name="labelloc" val="north"/>
       <a name="labelfont" val="DejaVu Sans plain 12"/>
     </comp>
-    <comp lib="6" loc="(24,77)" name="Text">
-      <a name="text" val="INPUT SECTION: Do not change anything here!"/>
-      <a name="font" val="DejaVu Sans bold 18"/>
+    <comp lib="6" loc="(599,101)" name="Text">
+      <a name="text" val="Do not introduce any other input or output pins."/>
+      <a name="font" val="DejaVu Sans plain 12"/>
       <a name="halign" val="left"/>
     </comp>
-    <comp lib="1" loc="(420,340)" name="AND Gate">
+    <comp lib="1" loc="(420,1180)" name="AND Gate">
       <a name="inputs" val="4"/>
     </comp>
-    <comp lib="0" loc="(910,180)" name="Pin">
+    <comp lib="1" loc="(420,1120)" name="AND Gate">
+      <a name="inputs" val="4"/>
+    </comp>
+    <comp lib="1" loc="(420,400)" name="AND Gate">
+      <a name="inputs" val="4"/>
+    </comp>
+    <comp lib="1" loc="(260,260)" name="NOT Gate">
+      <a name="facing" val="south"/>
+    </comp>
+    <comp lib="1" loc="(420,880)" name="AND Gate">
+      <a name="inputs" val="4"/>
+    </comp>
+    <comp lib="1" loc="(200,260)" name="NOT Gate">
+      <a name="facing" val="south"/>
+    </comp>
+    <comp lib="0" loc="(790,180)" name="Pin">
       <a name="facing" val="south"/>
       <a name="output" val="true"/>
       <a name="tristate" val="false"/>
-      <a name="label" val="I"/>
+      <a name="label" val="E"/>
       <a name="labelloc" val="north"/>
       <a name="labelfont" val="DejaVu Sans plain 12"/>
     </comp>
-    <comp lib="1" loc="(420,820)" name="AND Gate">
-      <a name="inputs" val="4"/>
-    </comp>
-    <comp lib="0" loc="(940,180)" name="Pin">
+    <comp lib="1" loc="(230,260)" name="NOT Gate">
       <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="J"/>
-      <a name="labelloc" val="north"/>
-      <a name="labelfont" val="DejaVu Sans plain 12"/>
     </comp>
     <comp lib="0" loc="(670,180)" name="Pin">
       <a name="facing" val="south"/>
@@ -470,28 +463,35 @@
       <a name="labelloc" val="north"/>
       <a name="labelfont" val="DejaVu Sans plain 12"/>
     </comp>
-    <comp lib="1" loc="(420,1120)" name="AND Gate">
+    <comp lib="1" loc="(420,820)" name="AND Gate">
       <a name="inputs" val="4"/>
     </comp>
-    <comp lib="6" loc="(596,77)" name="Text">
-      <a name="text" val="OUTPUT SECTION: Do not change anything here!"/>
+    <comp lib="0" loc="(820,180)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="F"/>
+      <a name="labelloc" val="north"/>
+      <a name="labelfont" val="DejaVu Sans plain 12"/>
+    </comp>
+    <comp lib="1" loc="(420,340)" name="AND Gate">
+      <a name="inputs" val="4"/>
+    </comp>
+    <comp lib="0" loc="(850,180)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="G"/>
+      <a name="labelloc" val="north"/>
+      <a name="labelfont" val="DejaVu Sans plain 12"/>
+    </comp>
+    <comp lib="1" loc="(420,940)" name="AND Gate">
+      <a name="inputs" val="4"/>
+    </comp>
+    <comp lib="6" loc="(23,32)" name="Text">
+      <a name="text" val="PROBLEM 1: DECODER"/>
       <a name="font" val="DejaVu Sans bold 18"/>
       <a name="halign" val="left"/>
-    </comp>
-    <comp lib="6" loc="(25,123)" name="Text">
-      <a name="text" val="Do not introduce any other input or output pins."/>
-      <a name="font" val="DejaVu Sans plain 12"/>
-      <a name="halign" val="left"/>
-    </comp>
-    <comp lib="1" loc="(420,280)" name="AND Gate">
-      <a name="inputs" val="4"/>
-    </comp>
-    <comp lib="6" loc="(348,229)" name="Text">
-      <a name="text" val="To your logic"/>
-      <a name="font" val="DejaVu Sans plain 12"/>
-    </comp>
-    <comp lib="1" loc="(290,260)" name="NOT Gate">
-      <a name="facing" val="south"/>
     </comp>
   </circuit>
   <circuit name="P2">
@@ -529,19 +529,19 @@
     <wire from="(380,600)" to="(720,600)"/>
     <wire from="(580,50)" to="(1100,50)"/>
     <wire from="(720,350)" to="(720,600)"/>
+    <wire from="(320,740)" to="(330,740)"/>
+    <wire from="(320,620)" to="(330,620)"/>
     <wire from="(320,660)" to="(330,660)"/>
     <wire from="(320,600)" to="(330,600)"/>
-    <wire from="(320,620)" to="(330,620)"/>
-    <wire from="(320,740)" to="(330,740)"/>
     <wire from="(320,780)" to="(330,780)"/>
     <wire from="(320,820)" to="(330,820)"/>
     <wire from="(320,520)" to="(330,520)"/>
     <wire from="(240,660)" to="(320,660)"/>
+    <wire from="(320,460)" to="(330,460)"/>
     <wire from="(320,840)" to="(330,840)"/>
     <wire from="(320,920)" to="(330,920)"/>
-    <wire from="(320,900)" to="(330,900)"/>
     <wire from="(320,940)" to="(330,940)"/>
-    <wire from="(320,460)" to="(330,460)"/>
+    <wire from="(320,900)" to="(330,900)"/>
     <wire from="(240,740)" to="(320,740)"/>
     <wire from="(240,820)" to="(320,820)"/>
     <wire from="(240,900)" to="(320,900)"/>
@@ -589,98 +589,15 @@
     <wire from="(860,180)" to="(860,300)"/>
     <wire from="(730,300)" to="(860,300)"/>
     <wire from="(10,50)" to="(530,50)"/>
-    <comp lib="1" loc="(380,680)" name="AND Gate">
+    <comp lib="1" loc="(380,760)" name="AND Gate">
       <a name="inputs" val="3"/>
       <a name="negate0" val="true"/>
-    </comp>
-    <comp lib="0" loc="(270,180)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="B"/>
-      <a name="labelloc" val="north"/>
-      <a name="labelfont" val="DejaVu Sans plain 12"/>
+      <a name="negate2" val="true"/>
     </comp>
     <comp lib="6" loc="(596,77)" name="Text">
       <a name="text" val="OUTPUT SECTION: Do not change anything here!"/>
       <a name="font" val="DejaVu Sans bold 18"/>
       <a name="halign" val="left"/>
-    </comp>
-    <comp lib="0" loc="(860,180)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="Y"/>
-      <a name="labelloc" val="north"/>
-      <a name="labelfont" val="DejaVu Sans plain 12"/>
-    </comp>
-    <comp lib="6" loc="(348,229)" name="Text">
-      <a name="text" val="To your logic"/>
-      <a name="font" val="DejaVu Sans plain 12"/>
-    </comp>
-    <comp lib="6" loc="(25,123)" name="Text">
-      <a name="text" val="Do not introduce any other input or output pins."/>
-      <a name="font" val="DejaVu Sans plain 12"/>
-      <a name="halign" val="left"/>
-    </comp>
-    <comp lib="6" loc="(24,77)" name="Text">
-      <a name="text" val="INPUT SECTION: Do not change anything here!"/>
-      <a name="font" val="DejaVu Sans bold 18"/>
-      <a name="halign" val="left"/>
-    </comp>
-    <comp lib="1" loc="(380,600)" name="AND Gate">
-      <a name="inputs" val="3"/>
-      <a name="negate1" val="true"/>
-      <a name="negate2" val="true"/>
-    </comp>
-    <comp lib="1" loc="(730,300)" name="OR Gate">
-      <a name="facing" val="north"/>
-      <a name="inputs" val="4"/>
-    </comp>
-    <comp lib="1" loc="(380,520)" name="AND Gate">
-      <a name="inputs" val="3"/>
-      <a name="negate1" val="true"/>
-    </comp>
-    <comp lib="1" loc="(380,920)" name="AND Gate">
-      <a name="inputs" val="3"/>
-      <a name="negate0" val="true"/>
-      <a name="negate1" val="true"/>
-      <a name="negate2" val="true"/>
-    </comp>
-    <comp lib="6" loc="(23,32)" name="Text">
-      <a name="text" val="PROBLEM 2: PROGRAMMABLE LOGIC ARRAY"/>
-      <a name="font" val="DejaVu Sans bold 18"/>
-      <a name="halign" val="left"/>
-    </comp>
-    <comp lib="1" loc="(380,840)" name="AND Gate">
-      <a name="inputs" val="3"/>
-      <a name="negate0" val="true"/>
-      <a name="negate1" val="true"/>
-    </comp>
-    <comp lib="6" loc="(599,101)" name="Text">
-      <a name="text" val="Do not introduce any other input or output pins."/>
-      <a name="font" val="DejaVu Sans plain 12"/>
-      <a name="halign" val="left"/>
-    </comp>
-    <comp lib="6" loc="(766,229)" name="Text">
-      <a name="text" val="From your logic"/>
-      <a name="font" val="DejaVu Sans plain 12"/>
-    </comp>
-    <comp lib="1" loc="(380,360)" name="AND Gate">
-      <a name="inputs" val="3"/>
-    </comp>
-    <comp lib="6" loc="(25,101)" name="Text">
-      <a name="text" val="You may only change the values of the inputs for testing using the hand tool."/>
-      <a name="font" val="DejaVu Sans plain 12"/>
-      <a name="halign" val="left"/>
-    </comp>
-    <comp lib="1" loc="(380,440)" name="AND Gate">
-      <a name="inputs" val="3"/>
-      <a name="negate2" val="true"/>
-    </comp>
-    <comp lib="1" loc="(380,760)" name="AND Gate">
-      <a name="inputs" val="3"/>
-      <a name="negate0" val="true"/>
-      <a name="negate2" val="true"/>
     </comp>
     <comp lib="0" loc="(240,180)" name="Pin">
       <a name="facing" val="south"/>
@@ -697,9 +614,54 @@
       <a name="labelloc" val="north"/>
       <a name="labelfont" val="DejaVu Sans plain 12"/>
     </comp>
+    <comp lib="0" loc="(270,180)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="B"/>
+      <a name="labelloc" val="north"/>
+      <a name="labelfont" val="DejaVu Sans plain 12"/>
+    </comp>
     <comp lib="1" loc="(580,300)" name="OR Gate">
       <a name="facing" val="north"/>
       <a name="inputs" val="4"/>
+    </comp>
+    <comp lib="6" loc="(25,123)" name="Text">
+      <a name="text" val="Do not introduce any other input or output pins."/>
+      <a name="font" val="DejaVu Sans plain 12"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="1" loc="(380,680)" name="AND Gate">
+      <a name="inputs" val="3"/>
+      <a name="negate0" val="true"/>
+    </comp>
+    <comp lib="1" loc="(730,300)" name="OR Gate">
+      <a name="facing" val="north"/>
+      <a name="inputs" val="4"/>
+    </comp>
+    <comp lib="6" loc="(25,101)" name="Text">
+      <a name="text" val="You may only change the values of the inputs for testing using the hand tool."/>
+      <a name="font" val="DejaVu Sans plain 12"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="0" loc="(860,180)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="Y"/>
+      <a name="labelloc" val="north"/>
+      <a name="labelfont" val="DejaVu Sans plain 12"/>
+    </comp>
+    <comp lib="1" loc="(380,520)" name="AND Gate">
+      <a name="inputs" val="3"/>
+      <a name="negate1" val="true"/>
+    </comp>
+    <comp lib="1" loc="(380,840)" name="AND Gate">
+      <a name="inputs" val="3"/>
+      <a name="negate0" val="true"/>
+      <a name="negate1" val="true"/>
+    </comp>
+    <comp lib="1" loc="(380,360)" name="AND Gate">
+      <a name="inputs" val="3"/>
     </comp>
     <comp lib="0" loc="(300,180)" name="Pin">
       <a name="facing" val="south"/>
@@ -707,6 +669,44 @@
       <a name="label" val="C"/>
       <a name="labelloc" val="north"/>
       <a name="labelfont" val="DejaVu Sans plain 12"/>
+    </comp>
+    <comp lib="6" loc="(24,77)" name="Text">
+      <a name="text" val="INPUT SECTION: Do not change anything here!"/>
+      <a name="font" val="DejaVu Sans bold 18"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="1" loc="(380,600)" name="AND Gate">
+      <a name="inputs" val="3"/>
+      <a name="negate1" val="true"/>
+      <a name="negate2" val="true"/>
+    </comp>
+    <comp lib="6" loc="(23,32)" name="Text">
+      <a name="text" val="PROBLEM 2: PROGRAMMABLE LOGIC ARRAY"/>
+      <a name="font" val="DejaVu Sans bold 18"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(766,229)" name="Text">
+      <a name="text" val="From your logic"/>
+      <a name="font" val="DejaVu Sans plain 12"/>
+    </comp>
+    <comp lib="6" loc="(599,101)" name="Text">
+      <a name="text" val="Do not introduce any other input or output pins."/>
+      <a name="font" val="DejaVu Sans plain 12"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(348,229)" name="Text">
+      <a name="text" val="To your logic"/>
+      <a name="font" val="DejaVu Sans plain 12"/>
+    </comp>
+    <comp lib="1" loc="(380,920)" name="AND Gate">
+      <a name="inputs" val="3"/>
+      <a name="negate0" val="true"/>
+      <a name="negate1" val="true"/>
+      <a name="negate2" val="true"/>
+    </comp>
+    <comp lib="1" loc="(380,440)" name="AND Gate">
+      <a name="inputs" val="3"/>
+      <a name="negate2" val="true"/>
     </comp>
   </circuit>
   <circuit name="P3">
@@ -764,126 +764,7 @@
     <wire from="(350,160)" to="(430,160)"/>
     <wire from="(280,160)" to="(350,160)"/>
     <wire from="(360,460)" to="(430,460)"/>
-    <comp lib="6" loc="(25,101)" name="Text">
-      <a name="text" val="You may only change the values of the inputs for testing using the hand tool."/>
-      <a name="font" val="DejaVu Sans plain 12"/>
-      <a name="halign" val="left"/>
-    </comp>
-    <comp lib="0" loc="(350,150)" name="Power"/>
-    <comp lib="0" loc="(460,340)" name="Transistor">
-      <a name="facing" val="south"/>
-    </comp>
-    <comp lib="0" loc="(220,340)" name="Transistor">
-      <a name="facing" val="south"/>
-    </comp>
-    <comp lib="0" loc="(110,180)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="B"/>
-      <a name="labelloc" val="north"/>
-      <a name="labelfont" val="DejaVu Sans plain 12"/>
-    </comp>
-    <comp lib="6" loc="(23,32)" name="Text">
-      <a name="text" val="PROBLEM 3: SERIES-PARALLEL CIRCUITS OF TRANSISTORS"/>
-      <a name="font" val="DejaVu Sans bold 18"/>
-      <a name="halign" val="left"/>
-    </comp>
-    <comp lib="0" loc="(80,200)" name="Tunnel">
-      <a name="facing" val="north"/>
-      <a name="label" val="tA"/>
-      <a name="labelfont" val="DejaVu Sans plain 12"/>
-    </comp>
-    <comp lib="0" loc="(400,380)" name="Transistor">
-      <a name="facing" val="south"/>
-    </comp>
-    <comp lib="0" loc="(340,340)" name="Transistor">
-      <a name="facing" val="south"/>
-    </comp>
-    <comp lib="0" loc="(250,240)" name="Transistor">
-      <a name="facing" val="south"/>
-    </comp>
-    <comp lib="0" loc="(260,410)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="tC"/>
-      <a name="labelfont" val="DejaVu Sans plain 12"/>
-    </comp>
-    <comp lib="0" loc="(440,320)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="tC"/>
-      <a name="labelfont" val="DejaVu Sans plain 12"/>
-    </comp>
-    <comp lib="0" loc="(110,200)" name="Tunnel">
-      <a name="facing" val="north"/>
-      <a name="label" val="tB"/>
-      <a name="labelfont" val="DejaVu Sans plain 12"/>
-    </comp>
-    <comp lib="6" loc="(25,123)" name="Text">
-      <a name="text" val="Do not introduce any other input or output pins."/>
-      <a name="font" val="DejaVu Sans plain 12"/>
-      <a name="halign" val="left"/>
-    </comp>
-    <comp lib="0" loc="(410,220)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="tA"/>
-      <a name="labelfont" val="DejaVu Sans plain 12"/>
-    </comp>
-    <comp lib="0" loc="(320,320)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="tC"/>
-      <a name="labelfont" val="DejaVu Sans plain 12"/>
-    </comp>
-    <comp lib="6" loc="(24,77)" name="Text">
-      <a name="text" val="RESERVED SECTION: Do not change anything here!"/>
-      <a name="font" val="DejaVu Sans bold 18"/>
-      <a name="halign" val="left"/>
-    </comp>
-    <comp lib="0" loc="(280,340)" name="Transistor">
-      <a name="facing" val="south"/>
-    </comp>
-    <comp lib="0" loc="(440,400)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="tA"/>
-      <a name="labelfont" val="DejaVu Sans plain 12"/>
-    </comp>
-    <comp lib="0" loc="(140,200)" name="Tunnel">
-      <a name="facing" val="north"/>
-      <a name="label" val="tC"/>
-      <a name="labelfont" val="DejaVu Sans plain 12"/>
-    </comp>
-    <comp lib="0" loc="(380,360)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="tB"/>
-      <a name="labelfont" val="DejaVu Sans plain 12"/>
-    </comp>
-    <comp lib="0" loc="(280,430)" name="Transistor">
-      <a name="facing" val="south"/>
-    </comp>
-    <comp lib="0" loc="(140,180)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="C"/>
-      <a name="labelloc" val="north"/>
-      <a name="labelfont" val="DejaVu Sans plain 12"/>
-    </comp>
-    <comp lib="0" loc="(560,180)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="X"/>
-      <a name="labelloc" val="north"/>
-      <a name="labelfont" val="DejaVu Sans plain 12"/>
-    </comp>
-    <comp lib="0" loc="(260,320)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="tB"/>
-      <a name="labelfont" val="DejaVu Sans plain 12"/>
-    </comp>
-    <comp lib="0" loc="(230,220)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="tA"/>
-      <a name="labelfont" val="DejaVu Sans plain 12"/>
-    </comp>
-    <comp lib="0" loc="(430,240)" name="Transistor">
+    <comp lib="0" loc="(310,240)" name="Transistor">
       <a name="facing" val="south"/>
     </comp>
     <comp lib="0" loc="(80,180)" name="Pin">
@@ -893,25 +774,144 @@
       <a name="labelloc" val="north"/>
       <a name="labelfont" val="DejaVu Sans plain 12"/>
     </comp>
-    <comp lib="0" loc="(200,320)" name="Tunnel">
+    <comp lib="0" loc="(110,200)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="tB"/>
+      <a name="labelfont" val="DejaVu Sans plain 12"/>
+    </comp>
+    <comp lib="0" loc="(260,320)" name="Tunnel">
       <a name="facing" val="east"/>
-      <a name="label" val="tA"/>
+      <a name="label" val="tB"/>
       <a name="labelfont" val="DejaVu Sans plain 12"/>
     </comp>
     <comp lib="6" loc="(451,528)" name="Text">
       <a name="text" val="From your pull-down circuit"/>
       <a name="font" val="DejaVu Sans plain 12"/>
     </comp>
+    <comp lib="6" loc="(23,32)" name="Text">
+      <a name="text" val="PROBLEM 3: SERIES-PARALLEL CIRCUITS OF TRANSISTORS"/>
+      <a name="font" val="DejaVu Sans bold 18"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(25,123)" name="Text">
+      <a name="text" val="Do not introduce any other input or output pins."/>
+      <a name="font" val="DejaVu Sans plain 12"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(25,101)" name="Text">
+      <a name="text" val="You may only change the values of the inputs for testing using the hand tool."/>
+      <a name="font" val="DejaVu Sans plain 12"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="0" loc="(560,180)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="X"/>
+      <a name="labelloc" val="north"/>
+      <a name="labelfont" val="DejaVu Sans plain 12"/>
+    </comp>
+    <comp lib="0" loc="(380,360)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="tB"/>
+      <a name="labelfont" val="DejaVu Sans plain 12"/>
+    </comp>
+    <comp lib="0" loc="(200,320)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="tA"/>
+      <a name="labelfont" val="DejaVu Sans plain 12"/>
+    </comp>
+    <comp lib="0" loc="(230,220)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="tA"/>
+      <a name="labelfont" val="DejaVu Sans plain 12"/>
+    </comp>
+    <comp lib="0" loc="(110,180)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="B"/>
+      <a name="labelloc" val="north"/>
+      <a name="labelfont" val="DejaVu Sans plain 12"/>
+    </comp>
+    <comp lib="0" loc="(400,380)" name="Transistor">
+      <a name="facing" val="south"/>
+    </comp>
+    <comp lib="0" loc="(220,340)" name="Transistor">
+      <a name="facing" val="south"/>
+    </comp>
+    <comp lib="0" loc="(280,430)" name="Transistor">
+      <a name="facing" val="south"/>
+    </comp>
+    <comp lib="0" loc="(460,420)" name="Transistor">
+      <a name="facing" val="south"/>
+    </comp>
+    <comp lib="0" loc="(350,150)" name="Power"/>
+    <comp lib="0" loc="(440,400)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="tA"/>
+      <a name="labelfont" val="DejaVu Sans plain 12"/>
+    </comp>
+    <comp lib="0" loc="(80,200)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="tA"/>
+      <a name="labelfont" val="DejaVu Sans plain 12"/>
+    </comp>
+    <comp lib="0" loc="(340,340)" name="Transistor">
+      <a name="facing" val="south"/>
+    </comp>
+    <comp lib="0" loc="(320,320)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="tC"/>
+      <a name="labelfont" val="DejaVu Sans plain 12"/>
+    </comp>
+    <comp lib="0" loc="(430,240)" name="Transistor">
+      <a name="facing" val="south"/>
+    </comp>
+    <comp lib="6" loc="(24,77)" name="Text">
+      <a name="text" val="RESERVED SECTION: Do not change anything here!"/>
+      <a name="font" val="DejaVu Sans bold 18"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="0" loc="(140,180)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="C"/>
+      <a name="labelloc" val="north"/>
+      <a name="labelfont" val="DejaVu Sans plain 12"/>
+    </comp>
+    <comp lib="0" loc="(250,240)" name="Transistor">
+      <a name="facing" val="south"/>
+    </comp>
+    <comp lib="0" loc="(260,410)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="tC"/>
+      <a name="labelfont" val="DejaVu Sans plain 12"/>
+    </comp>
+    <comp lib="0" loc="(410,220)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="tA"/>
+      <a name="labelfont" val="DejaVu Sans plain 12"/>
+    </comp>
     <comp lib="0" loc="(290,220)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="tC"/>
       <a name="labelfont" val="DejaVu Sans plain 12"/>
     </comp>
-    <comp lib="0" loc="(310,240)" name="Transistor">
+    <comp lib="0" loc="(280,340)" name="Transistor">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="0" loc="(460,420)" name="Transistor">
+    <comp lib="0" loc="(460,340)" name="Transistor">
       <a name="facing" val="south"/>
+    </comp>
+    <comp lib="0" loc="(440,320)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="tC"/>
+      <a name="labelfont" val="DejaVu Sans plain 12"/>
+    </comp>
+    <comp lib="0" loc="(140,200)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="tC"/>
+      <a name="labelfont" val="DejaVu Sans plain 12"/>
     </comp>
   </circuit>
   <circuit name="P4_Main">
@@ -997,16 +997,116 @@
     <wire from="(570,580)" to="(580,580)"/>
     <wire from="(530,620)" to="(540,620)"/>
     <wire from="(750,250)" to="(890,250)"/>
-    <comp lib="6" loc="(596,77)" name="Text">
-      <a name="text" val="OUTPUT SECTION: Do not change anything here!"/>
+    <comp loc="(570,570)" name="P4_IncrOneBit"/>
+    <comp loc="(570,470)" name="P4_IncrBit0"/>
+    <comp lib="6" loc="(25,123)" name="Text">
+      <a name="text" val="Do not introduce any other input or output pins."/>
+      <a name="font" val="DejaVu Sans plain 12"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="0" loc="(440,410)" name="Splitter">
+      <a name="facing" val="south"/>
+      <a name="fanout" val="5"/>
+      <a name="incoming" val="5"/>
+    </comp>
+    <comp lib="0" loc="(920,180)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="X3"/>
+      <a name="labelloc" val="north"/>
+      <a name="labelfont" val="DejaVu Sans plain 12"/>
+    </comp>
+    <comp loc="(570,520)" name="P4_IncrOneBit"/>
+    <comp lib="6" loc="(24,77)" name="Text">
+      <a name="text" val="INPUT SECTION: Do not change anything here!"/>
       <a name="font" val="DejaVu Sans bold 18"/>
       <a name="halign" val="left"/>
+    </comp>
+    <comp lib="0" loc="(950,180)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="X2"/>
+      <a name="labelloc" val="north"/>
+      <a name="labelfont" val="DejaVu Sans plain 12"/>
+    </comp>
+    <comp loc="(570,670)" name="P4_IncrOneBit"/>
+    <comp lib="0" loc="(340,180)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="A3"/>
+      <a name="labelloc" val="north"/>
+      <a name="labelfont" val="DejaVu Sans plain 12"/>
+    </comp>
+    <comp lib="0" loc="(400,180)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="A1"/>
+      <a name="labelloc" val="north"/>
+      <a name="labelfont" val="DejaVu Sans plain 12"/>
+    </comp>
+    <comp lib="0" loc="(980,180)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="X1"/>
+      <a name="labelloc" val="north"/>
+      <a name="labelfont" val="DejaVu Sans plain 12"/>
+    </comp>
+    <comp lib="6" loc="(599,101)" name="Text">
+      <a name="text" val="Do not introduce any other input or output pins."/>
+      <a name="font" val="DejaVu Sans plain 12"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="0" loc="(440,310)" name="Splitter">
+      <a name="facing" val="north"/>
+      <a name="fanout" val="5"/>
+      <a name="incoming" val="5"/>
     </comp>
     <comp lib="0" loc="(1010,180)" name="Pin">
       <a name="facing" val="south"/>
       <a name="output" val="true"/>
       <a name="tristate" val="false"/>
       <a name="label" val="X0"/>
+      <a name="labelloc" val="north"/>
+      <a name="labelfont" val="DejaVu Sans plain 12"/>
+    </comp>
+    <comp lib="6" loc="(596,77)" name="Text">
+      <a name="text" val="OUTPUT SECTION: Do not change anything here!"/>
+      <a name="font" val="DejaVu Sans bold 18"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="0" loc="(430,180)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="A0"/>
+      <a name="labelloc" val="north"/>
+      <a name="labelfont" val="DejaVu Sans plain 12"/>
+    </comp>
+    <comp lib="6" loc="(486,370)" name="Text">
+      <a name="text" val="To your logic"/>
+      <a name="font" val="DejaVu Sans plain 12"/>
+    </comp>
+    <comp lib="6" loc="(23,32)" name="Text">
+      <a name="text" val="PROBLEM 4: 5-BIT INCREMENTER (Main)"/>
+      <a name="font" val="DejaVu Sans bold 18"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="0" loc="(670,410)" name="Splitter">
+      <a name="facing" val="south"/>
+      <a name="fanout" val="5"/>
+      <a name="incoming" val="5"/>
+      <a name="appear" val="right"/>
+    </comp>
+    <comp lib="6" loc="(616,370)" name="Text">
+      <a name="text" val="From your logic"/>
+      <a name="font" val="DejaVu Sans plain 12"/>
+    </comp>
+    <comp lib="0" loc="(310,180)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="A4"/>
       <a name="labelloc" val="north"/>
       <a name="labelfont" val="DejaVu Sans plain 12"/>
     </comp>
@@ -1022,30 +1122,13 @@
       <a name="font" val="DejaVu Sans plain 12"/>
       <a name="halign" val="left"/>
     </comp>
-    <comp lib="6" loc="(486,370)" name="Text">
-      <a name="text" val="To your logic"/>
-      <a name="font" val="DejaVu Sans plain 12"/>
+    <comp lib="0" loc="(740,310)" name="Splitter">
+      <a name="facing" val="north"/>
+      <a name="fanout" val="5"/>
+      <a name="incoming" val="5"/>
+      <a name="appear" val="right"/>
     </comp>
     <comp loc="(570,620)" name="P4_IncrOneBit"/>
-    <comp lib="6" loc="(23,32)" name="Text">
-      <a name="text" val="PROBLEM 4: 5-BIT INCREMENTER (Main)"/>
-      <a name="font" val="DejaVu Sans bold 18"/>
-      <a name="halign" val="left"/>
-    </comp>
-    <comp lib="0" loc="(920,180)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="X3"/>
-      <a name="labelloc" val="north"/>
-      <a name="labelfont" val="DejaVu Sans plain 12"/>
-    </comp>
-    <comp loc="(570,670)" name="P4_IncrOneBit"/>
-    <comp lib="6" loc="(24,77)" name="Text">
-      <a name="text" val="INPUT SECTION: Do not change anything here!"/>
-      <a name="font" val="DejaVu Sans bold 18"/>
-      <a name="halign" val="left"/>
-    </comp>
     <comp lib="0" loc="(890,180)" name="Pin">
       <a name="facing" val="south"/>
       <a name="output" val="true"/>
@@ -1053,89 +1136,6 @@
       <a name="label" val="X4"/>
       <a name="labelloc" val="north"/>
       <a name="labelfont" val="DejaVu Sans plain 12"/>
-    </comp>
-    <comp lib="0" loc="(400,180)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="A1"/>
-      <a name="labelloc" val="north"/>
-      <a name="labelfont" val="DejaVu Sans plain 12"/>
-    </comp>
-    <comp lib="0" loc="(670,410)" name="Splitter">
-      <a name="facing" val="south"/>
-      <a name="fanout" val="5"/>
-      <a name="incoming" val="5"/>
-      <a name="appear" val="right"/>
-    </comp>
-    <comp lib="0" loc="(980,180)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="X1"/>
-      <a name="labelloc" val="north"/>
-      <a name="labelfont" val="DejaVu Sans plain 12"/>
-    </comp>
-    <comp lib="0" loc="(440,310)" name="Splitter">
-      <a name="facing" val="north"/>
-      <a name="fanout" val="5"/>
-      <a name="incoming" val="5"/>
-    </comp>
-    <comp loc="(570,570)" name="P4_IncrOneBit"/>
-    <comp loc="(570,470)" name="P4_IncrBit0"/>
-    <comp loc="(570,520)" name="P4_IncrOneBit"/>
-    <comp lib="0" loc="(440,410)" name="Splitter">
-      <a name="facing" val="south"/>
-      <a name="fanout" val="5"/>
-      <a name="incoming" val="5"/>
-    </comp>
-    <comp lib="6" loc="(616,370)" name="Text">
-      <a name="text" val="From your logic"/>
-      <a name="font" val="DejaVu Sans plain 12"/>
-    </comp>
-    <comp lib="0" loc="(430,180)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="A0"/>
-      <a name="labelloc" val="north"/>
-      <a name="labelfont" val="DejaVu Sans plain 12"/>
-    </comp>
-    <comp lib="6" loc="(599,101)" name="Text">
-      <a name="text" val="Do not introduce any other input or output pins."/>
-      <a name="font" val="DejaVu Sans plain 12"/>
-      <a name="halign" val="left"/>
-    </comp>
-    <comp lib="0" loc="(310,180)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="A4"/>
-      <a name="labelloc" val="north"/>
-      <a name="labelfont" val="DejaVu Sans plain 12"/>
-    </comp>
-    <comp lib="0" loc="(950,180)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="X2"/>
-      <a name="labelloc" val="north"/>
-      <a name="labelfont" val="DejaVu Sans plain 12"/>
-    </comp>
-    <comp lib="6" loc="(25,123)" name="Text">
-      <a name="text" val="Do not introduce any other input or output pins."/>
-      <a name="font" val="DejaVu Sans plain 12"/>
-      <a name="halign" val="left"/>
-    </comp>
-    <comp lib="0" loc="(340,180)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="A3"/>
-      <a name="labelloc" val="north"/>
-      <a name="labelfont" val="DejaVu Sans plain 12"/>
-    </comp>
-    <comp lib="0" loc="(740,310)" name="Splitter">
-      <a name="facing" val="north"/>
-      <a name="fanout" val="5"/>
-      <a name="incoming" val="5"/>
-      <a name="appear" val="right"/>
     </comp>
   </circuit>
   <circuit name="P4_IncrOneBit">
@@ -1149,46 +1149,35 @@
     <wire from="(270,380)" to="(270,450)"/>
     <wire from="(320,340)" to="(320,410)"/>
     <wire from="(820,230)" to="(820,430)"/>
+    <wire from="(320,180)" to="(320,340)"/>
     <wire from="(590,360)" to="(770,360)"/>
     <wire from="(10,50)" to="(10,250)"/>
-    <wire from="(770,180)" to="(830,180)"/>
-    <wire from="(270,230)" to="(270,380)"/>
-    <wire from="(1100,50)" to="(1100,250)"/>
-    <wire from="(580,430)" to="(820,430)"/>
-    <wire from="(320,180)" to="(320,340)"/>
     <wire from="(320,410)" to="(530,410)"/>
     <wire from="(320,340)" to="(530,340)"/>
+    <wire from="(770,180)" to="(830,180)"/>
     <wire from="(580,50)" to="(1100,50)"/>
     <wire from="(580,250)" to="(1100,250)"/>
+    <wire from="(270,230)" to="(270,380)"/>
     <wire from="(260,230)" to="(270,230)"/>
+    <wire from="(1100,50)" to="(1100,250)"/>
     <wire from="(10,50)" to="(530,50)"/>
     <wire from="(10,250)" to="(530,250)"/>
     <wire from="(270,450)" to="(530,450)"/>
     <wire from="(270,380)" to="(530,380)"/>
+    <wire from="(580,430)" to="(820,430)"/>
     <wire from="(820,230)" to="(830,230)"/>
     <wire from="(770,180)" to="(770,360)"/>
-    <comp lib="0" loc="(830,180)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="S"/>
-      <a name="labelloc" val="north"/>
-      <a name="labelfont" val="DejaVu Sans plain 12"/>
-    </comp>
-    <comp lib="0" loc="(260,180)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="Cin"/>
-      <a name="labelloc" val="north"/>
-      <a name="labelfont" val="DejaVu Sans plain 12"/>
-    </comp>
-    <comp lib="0" loc="(260,230)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="A"/>
-      <a name="labelloc" val="north"/>
-      <a name="labelfont" val="DejaVu Sans plain 12"/>
-    </comp>
     <comp lib="6" loc="(25,101)" name="Text">
       <a name="text" val="You may only change the values of the inputs for testing using the hand tool."/>
+      <a name="font" val="DejaVu Sans plain 12"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(713,275)" name="Text">
+      <a name="text" val="From your logic"/>
+      <a name="font" val="DejaVu Sans plain 12"/>
+    </comp>
+    <comp lib="6" loc="(599,101)" name="Text">
+      <a name="text" val="Do not introduce any other input or output pins."/>
       <a name="font" val="DejaVu Sans plain 12"/>
       <a name="halign" val="left"/>
     </comp>
@@ -1197,19 +1186,37 @@
       <a name="font" val="DejaVu Sans bold 18"/>
       <a name="halign" val="left"/>
     </comp>
-    <comp lib="6" loc="(713,275)" name="Text">
-      <a name="text" val="From your logic"/>
-      <a name="font" val="DejaVu Sans plain 12"/>
+    <comp lib="1" loc="(580,430)" name="AND Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="0" loc="(260,180)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="Cin"/>
+      <a name="labelloc" val="north"/>
+      <a name="labelfont" val="DejaVu Sans plain 12"/>
     </comp>
     <comp lib="1" loc="(590,360)" name="XOR Gate">
       <a name="inputs" val="2"/>
     </comp>
-    <comp lib="1" loc="(580,430)" name="AND Gate">
-      <a name="inputs" val="2"/>
+    <comp lib="0" loc="(260,230)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="A"/>
+      <a name="labelloc" val="north"/>
+      <a name="labelfont" val="DejaVu Sans plain 12"/>
     </comp>
     <comp lib="6" loc="(23,32)" name="Text">
       <a name="text" val="PROBLEM 4: 12-BIT INCREMENTER (IncrOneBit)"/>
       <a name="font" val="DejaVu Sans bold 18"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(24,77)" name="Text">
+      <a name="text" val="INPUT SECTION: Do not change anything here!"/>
+      <a name="font" val="DejaVu Sans bold 18"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(25,123)" name="Text">
+      <a name="text" val="Do not introduce any other input or output pins."/>
+      <a name="font" val="DejaVu Sans plain 12"/>
       <a name="halign" val="left"/>
     </comp>
     <comp lib="0" loc="(830,230)" name="Pin">
@@ -1220,24 +1227,17 @@
       <a name="labelloc" val="north"/>
       <a name="labelfont" val="DejaVu Sans plain 12"/>
     </comp>
-    <comp lib="6" loc="(24,77)" name="Text">
-      <a name="text" val="INPUT SECTION: Do not change anything here!"/>
-      <a name="font" val="DejaVu Sans bold 18"/>
-      <a name="halign" val="left"/>
-    </comp>
-    <comp lib="6" loc="(25,123)" name="Text">
-      <a name="text" val="Do not introduce any other input or output pins."/>
-      <a name="font" val="DejaVu Sans plain 12"/>
-      <a name="halign" val="left"/>
+    <comp lib="0" loc="(830,180)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="S"/>
+      <a name="labelloc" val="north"/>
+      <a name="labelfont" val="DejaVu Sans plain 12"/>
     </comp>
     <comp lib="6" loc="(369,276)" name="Text">
       <a name="text" val="To your logic"/>
       <a name="font" val="DejaVu Sans plain 12"/>
-    </comp>
-    <comp lib="6" loc="(599,101)" name="Text">
-      <a name="text" val="Do not introduce any other input or output pins."/>
-      <a name="font" val="DejaVu Sans plain 12"/>
-      <a name="halign" val="left"/>
     </comp>
   </circuit>
   <circuit name="P4_IncrBit0">
@@ -1248,18 +1248,18 @@
     <wire from="(260,180)" to="(320,180)"/>
     <wire from="(580,50)" to="(580,250)"/>
     <wire from="(530,50)" to="(530,250)"/>
+    <wire from="(770,180)" to="(770,350)"/>
     <wire from="(10,50)" to="(10,250)"/>
     <wire from="(390,330)" to="(440,330)"/>
-    <wire from="(770,180)" to="(830,180)"/>
-    <wire from="(320,180)" to="(320,330)"/>
-    <wire from="(390,390)" to="(820,390)"/>
-    <wire from="(1100,50)" to="(1100,250)"/>
-    <wire from="(770,180)" to="(770,350)"/>
     <wire from="(820,230)" to="(820,390)"/>
     <wire from="(290,370)" to="(440,370)"/>
+    <wire from="(770,180)" to="(830,180)"/>
     <wire from="(580,50)" to="(1100,50)"/>
     <wire from="(580,250)" to="(1100,250)"/>
+    <wire from="(320,180)" to="(320,330)"/>
+    <wire from="(390,390)" to="(820,390)"/>
     <wire from="(500,350)" to="(770,350)"/>
+    <wire from="(1100,50)" to="(1100,250)"/>
     <wire from="(10,50)" to="(530,50)"/>
     <wire from="(10,250)" to="(530,250)"/>
     <wire from="(820,230)" to="(830,230)"/>
@@ -1270,6 +1270,12 @@
       <a name="font" val="DejaVu Sans plain 12"/>
       <a name="halign" val="left"/>
     </comp>
+    <comp lib="6" loc="(596,77)" name="Text">
+      <a name="text" val="OUTPUT SECTION: Do not change anything here!"/>
+      <a name="font" val="DejaVu Sans bold 18"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="0" loc="(290,370)" name="Constant"/>
     <comp lib="6" loc="(369,276)" name="Text">
       <a name="text" val="To your logic"/>
       <a name="font" val="DejaVu Sans plain 12"/>
@@ -1279,14 +1285,22 @@
       <a name="font" val="DejaVu Sans plain 12"/>
       <a name="halign" val="left"/>
     </comp>
-    <comp lib="6" loc="(596,77)" name="Text">
-      <a name="text" val="OUTPUT SECTION: Do not change anything here!"/>
-      <a name="font" val="DejaVu Sans bold 18"/>
-      <a name="halign" val="left"/>
-    </comp>
     <comp lib="6" loc="(713,275)" name="Text">
       <a name="text" val="From your logic"/>
       <a name="font" val="DejaVu Sans plain 12"/>
+    </comp>
+    <comp lib="6" loc="(24,77)" name="Text">
+      <a name="text" val="INPUT SECTION: Do not change anything here!"/>
+      <a name="font" val="DejaVu Sans bold 18"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="0" loc="(830,180)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="S"/>
+      <a name="labelloc" val="north"/>
+      <a name="labelfont" val="DejaVu Sans plain 12"/>
     </comp>
     <comp lib="1" loc="(500,350)" name="XOR Gate">
       <a name="inputs" val="2"/>
@@ -1297,27 +1311,13 @@
       <a name="labelloc" val="north"/>
       <a name="labelfont" val="DejaVu Sans plain 12"/>
     </comp>
-    <comp lib="0" loc="(830,180)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="S"/>
-      <a name="labelloc" val="north"/>
-      <a name="labelfont" val="DejaVu Sans plain 12"/>
-    </comp>
     <comp lib="6" loc="(25,123)" name="Text">
       <a name="text" val="Do not introduce any other input or output pins."/>
       <a name="font" val="DejaVu Sans plain 12"/>
       <a name="halign" val="left"/>
     </comp>
-    <comp lib="0" loc="(290,370)" name="Constant"/>
     <comp lib="6" loc="(23,32)" name="Text">
       <a name="text" val="PROBLEM 4: 12-BIT INCREMENTER (IncrBit0)"/>
-      <a name="font" val="DejaVu Sans bold 18"/>
-      <a name="halign" val="left"/>
-    </comp>
-    <comp lib="6" loc="(24,77)" name="Text">
-      <a name="text" val="INPUT SECTION: Do not change anything here!"/>
       <a name="font" val="DejaVu Sans bold 18"/>
       <a name="halign" val="left"/>
     </comp>
@@ -1403,16 +1403,31 @@
     <wire from="(10,50)" to="(530,50)"/>
     <wire from="(740,230)" to="(740,280)"/>
     <wire from="(730,220)" to="(810,220)"/>
-    <comp lib="0" loc="(430,370)" name="Splitter">
+    <comp lib="0" loc="(330,180)" name="Pin">
       <a name="facing" val="south"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="A3"/>
+      <a name="labelloc" val="north"/>
+      <a name="labelfont" val="DejaVu Sans plain 12"/>
+    </comp>
+    <comp lib="0" loc="(690,300)" name="Splitter">
+      <a name="facing" val="north"/>
       <a name="fanout" val="10"/>
       <a name="incoming" val="10"/>
       <a name="appear" val="right"/>
     </comp>
-    <comp lib="0" loc="(300,180)" name="Pin">
+    <comp lib="0" loc="(390,180)" name="Pin">
       <a name="facing" val="south"/>
       <a name="tristate" val="false"/>
-      <a name="label" val="A4"/>
+      <a name="label" val="A1"/>
+      <a name="labelloc" val="north"/>
+      <a name="labelfont" val="DejaVu Sans plain 12"/>
+    </comp>
+    <comp lib="0" loc="(870,180)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="X4"/>
       <a name="labelloc" val="north"/>
       <a name="labelfont" val="DejaVu Sans plain 12"/>
     </comp>
@@ -1423,63 +1438,6 @@
       <a name="labelloc" val="north"/>
       <a name="labelfont" val="DejaVu Sans plain 12"/>
     </comp>
-    <comp lib="0" loc="(810,180)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="X6"/>
-      <a name="labelloc" val="north"/>
-      <a name="labelfont" val="DejaVu Sans plain 12"/>
-    </comp>
-    <comp lib="0" loc="(240,180)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="A6"/>
-      <a name="labelloc" val="north"/>
-      <a name="labelfont" val="DejaVu Sans plain 12"/>
-    </comp>
-    <comp lib="6" loc="(24,77)" name="Text">
-      <a name="text" val="INPUT SECTION: Do not change anything here!"/>
-      <a name="font" val="DejaVu Sans bold 18"/>
-      <a name="halign" val="left"/>
-    </comp>
-    <comp lib="0" loc="(390,180)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="A1"/>
-      <a name="labelloc" val="north"/>
-      <a name="labelfont" val="DejaVu Sans plain 12"/>
-    </comp>
-    <comp lib="6" loc="(619,355)" name="Text">
-      <a name="text" val="From your logic"/>
-      <a name="font" val="DejaVu Sans plain 12"/>
-    </comp>
-    <comp lib="0" loc="(430,300)" name="Splitter">
-      <a name="facing" val="north"/>
-      <a name="fanout" val="10"/>
-      <a name="incoming" val="10"/>
-    </comp>
-    <comp lib="0" loc="(870,180)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="X4"/>
-      <a name="labelloc" val="north"/>
-      <a name="labelfont" val="DejaVu Sans plain 12"/>
-    </comp>
-    <comp lib="0" loc="(720,180)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="X9"/>
-      <a name="labelloc" val="north"/>
-      <a name="labelfont" val="DejaVu Sans plain 12"/>
-    </comp>
-    <comp lib="6" loc="(596,77)" name="Text">
-      <a name="text" val="OUTPUT SECTION: Do not change anything here!"/>
-      <a name="font" val="DejaVu Sans bold 18"/>
-      <a name="halign" val="left"/>
-    </comp>
     <comp lib="0" loc="(780,180)" name="Pin">
       <a name="facing" val="south"/>
       <a name="output" val="true"/>
@@ -1488,29 +1446,31 @@
       <a name="labelloc" val="north"/>
       <a name="labelfont" val="DejaVu Sans plain 12"/>
     </comp>
-    <comp lib="0" loc="(840,180)" name="Pin">
+    <comp lib="0" loc="(990,180)" name="Pin">
       <a name="facing" val="south"/>
       <a name="output" val="true"/>
       <a name="tristate" val="false"/>
-      <a name="label" val="X5"/>
+      <a name="label" val="X0"/>
       <a name="labelloc" val="north"/>
       <a name="labelfont" val="DejaVu Sans plain 12"/>
     </comp>
-    <comp lib="0" loc="(210,180)" name="Pin">
+    <comp lib="0" loc="(420,180)" name="Pin">
       <a name="facing" val="south"/>
       <a name="tristate" val="false"/>
-      <a name="label" val="A7"/>
+      <a name="label" val="A0"/>
       <a name="labelloc" val="north"/>
       <a name="labelfont" val="DejaVu Sans plain 12"/>
     </comp>
-    <comp lib="6" loc="(476,354)" name="Text">
-      <a name="text" val="To your logic"/>
-      <a name="font" val="DejaVu Sans plain 12"/>
+    <comp lib="6" loc="(23,32)" name="Text">
+      <a name="text" val="PROBLEM 5: 10-BIT LEFT NORMALIZER (Main)"/>
+      <a name="font" val="DejaVu Sans bold 18"/>
+      <a name="halign" val="left"/>
     </comp>
-    <comp lib="0" loc="(270,180)" name="Pin">
+    <comp lib="0" loc="(720,180)" name="Pin">
       <a name="facing" val="south"/>
+      <a name="output" val="true"/>
       <a name="tristate" val="false"/>
-      <a name="label" val="A5"/>
+      <a name="label" val="X9"/>
       <a name="labelloc" val="north"/>
       <a name="labelfont" val="DejaVu Sans plain 12"/>
     </comp>
@@ -1527,23 +1487,66 @@
       <a name="fanout" val="10"/>
       <a name="incoming" val="10"/>
     </comp>
-    <comp lib="0" loc="(330,180)" name="Pin">
+    <comp lib="0" loc="(750,180)" name="Pin">
       <a name="facing" val="south"/>
+      <a name="output" val="true"/>
       <a name="tristate" val="false"/>
-      <a name="label" val="A3"/>
+      <a name="label" val="X8"/>
       <a name="labelloc" val="north"/>
       <a name="labelfont" val="DejaVu Sans plain 12"/>
     </comp>
-    <comp lib="6" loc="(25,123)" name="Text">
-      <a name="text" val="Do not introduce any other input or output pins."/>
-      <a name="font" val="DejaVu Sans plain 12"/>
+    <comp lib="6" loc="(596,77)" name="Text">
+      <a name="text" val="OUTPUT SECTION: Do not change anything here!"/>
+      <a name="font" val="DejaVu Sans bold 18"/>
       <a name="halign" val="left"/>
+    </comp>
+    <comp lib="0" loc="(270,180)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="A5"/>
+      <a name="labelloc" val="north"/>
+      <a name="labelfont" val="DejaVu Sans plain 12"/>
+    </comp>
+    <comp lib="0" loc="(150,180)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="A9"/>
+      <a name="labelloc" val="north"/>
+      <a name="labelfont" val="DejaVu Sans plain 12"/>
+    </comp>
+    <comp lib="0" loc="(430,300)" name="Splitter">
+      <a name="facing" val="north"/>
+      <a name="fanout" val="10"/>
+      <a name="incoming" val="10"/>
+    </comp>
+    <comp lib="6" loc="(24,77)" name="Text">
+      <a name="text" val="INPUT SECTION: Do not change anything here!"/>
+      <a name="font" val="DejaVu Sans bold 18"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="0" loc="(210,180)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="A7"/>
+      <a name="labelloc" val="north"/>
+      <a name="labelfont" val="DejaVu Sans plain 12"/>
+    </comp>
+    <comp lib="6" loc="(619,355)" name="Text">
+      <a name="text" val="From your logic"/>
+      <a name="font" val="DejaVu Sans plain 12"/>
     </comp>
     <comp lib="0" loc="(960,180)" name="Pin">
       <a name="facing" val="south"/>
       <a name="output" val="true"/>
       <a name="tristate" val="false"/>
       <a name="label" val="X1"/>
+      <a name="labelloc" val="north"/>
+      <a name="labelfont" val="DejaVu Sans plain 12"/>
+    </comp>
+    <comp lib="0" loc="(300,180)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="A4"/>
       <a name="labelloc" val="north"/>
       <a name="labelfont" val="DejaVu Sans plain 12"/>
     </comp>
@@ -1554,6 +1557,24 @@
       <a name="labelloc" val="north"/>
       <a name="labelfont" val="DejaVu Sans plain 12"/>
     </comp>
+    <comp lib="0" loc="(840,180)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="X5"/>
+      <a name="labelloc" val="north"/>
+      <a name="labelfont" val="DejaVu Sans plain 12"/>
+    </comp>
+    <comp lib="6" loc="(25,101)" name="Text">
+      <a name="text" val="You may only change the values of the inputs for testing using the hand tool."/>
+      <a name="font" val="DejaVu Sans plain 12"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(25,123)" name="Text">
+      <a name="text" val="Do not introduce any other input or output pins."/>
+      <a name="font" val="DejaVu Sans plain 12"/>
+      <a name="halign" val="left"/>
+    </comp>
     <comp lib="0" loc="(930,180)" name="Pin">
       <a name="facing" val="south"/>
       <a name="output" val="true"/>
@@ -1562,11 +1583,28 @@
       <a name="labelloc" val="north"/>
       <a name="labelfont" val="DejaVu Sans plain 12"/>
     </comp>
-    <comp lib="0" loc="(990,180)" name="Pin">
+    <comp lib="6" loc="(476,354)" name="Text">
+      <a name="text" val="To your logic"/>
+      <a name="font" val="DejaVu Sans plain 12"/>
+    </comp>
+    <comp lib="0" loc="(810,180)" name="Pin">
       <a name="facing" val="south"/>
       <a name="output" val="true"/>
       <a name="tristate" val="false"/>
-      <a name="label" val="X0"/>
+      <a name="label" val="X6"/>
+      <a name="labelloc" val="north"/>
+      <a name="labelfont" val="DejaVu Sans plain 12"/>
+    </comp>
+    <comp lib="0" loc="(430,370)" name="Splitter">
+      <a name="facing" val="south"/>
+      <a name="fanout" val="10"/>
+      <a name="incoming" val="10"/>
+      <a name="appear" val="right"/>
+    </comp>
+    <comp lib="0" loc="(240,180)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="A6"/>
       <a name="labelloc" val="north"/>
       <a name="labelfont" val="DejaVu Sans plain 12"/>
     </comp>
@@ -1574,44 +1612,6 @@
       <a name="text" val="Do not introduce any other input or output pins."/>
       <a name="font" val="DejaVu Sans plain 12"/>
       <a name="halign" val="left"/>
-    </comp>
-    <comp lib="0" loc="(420,180)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="A0"/>
-      <a name="labelloc" val="north"/>
-      <a name="labelfont" val="DejaVu Sans plain 12"/>
-    </comp>
-    <comp lib="6" loc="(23,32)" name="Text">
-      <a name="text" val="PROBLEM 5: 10-BIT LEFT NORMALIZER (Main)"/>
-      <a name="font" val="DejaVu Sans bold 18"/>
-      <a name="halign" val="left"/>
-    </comp>
-    <comp lib="6" loc="(25,101)" name="Text">
-      <a name="text" val="You may only change the values of the inputs for testing using the hand tool."/>
-      <a name="font" val="DejaVu Sans plain 12"/>
-      <a name="halign" val="left"/>
-    </comp>
-    <comp lib="0" loc="(690,300)" name="Splitter">
-      <a name="facing" val="north"/>
-      <a name="fanout" val="10"/>
-      <a name="incoming" val="10"/>
-      <a name="appear" val="right"/>
-    </comp>
-    <comp lib="0" loc="(750,180)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="X8"/>
-      <a name="labelloc" val="north"/>
-      <a name="labelfont" val="DejaVu Sans plain 12"/>
-    </comp>
-    <comp lib="0" loc="(150,180)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="A9"/>
-      <a name="labelloc" val="north"/>
-      <a name="labelfont" val="DejaVu Sans plain 12"/>
     </comp>
   </circuit>
   <circuit name="P5_LSH1">
@@ -1660,33 +1660,24 @@
     <wire from="(350,260)" to="(350,320)"/>
     <wire from="(290,260)" to="(290,380)"/>
     <wire from="(820,260)" to="(820,310)"/>
-    <comp lib="0" loc="(640,420)" name="Constant">
-      <a name="value" val="0x0"/>
+    <comp lib="6" loc="(596,77)" name="Text">
+      <a name="text" val="OUTPUT SECTION: Do not change anything here!"/>
+      <a name="font" val="DejaVu Sans bold 18"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(23,32)" name="Text">
+      <a name="text" val="PROBLEM 5: 10-BIT LEFT NORMALIZER (LSH1)"/>
+      <a name="font" val="DejaVu Sans bold 18"/>
+      <a name="halign" val="left"/>
     </comp>
     <comp lib="6" loc="(599,101)" name="Text">
       <a name="text" val="Do not introduce any other input or output pins."/>
       <a name="font" val="DejaVu Sans plain 12"/>
       <a name="halign" val="left"/>
     </comp>
-    <comp lib="0" loc="(270,240)" name="Splitter">
-      <a name="facing" val="south"/>
-      <a name="fanout" val="10"/>
-      <a name="incoming" val="10"/>
-    </comp>
-    <comp lib="6" loc="(596,77)" name="Text">
-      <a name="text" val="OUTPUT SECTION: Do not change anything here!"/>
+    <comp lib="6" loc="(24,77)" name="Text">
+      <a name="text" val="INPUT SECTION: Do not change anything here!"/>
       <a name="font" val="DejaVu Sans bold 18"/>
-      <a name="halign" val="left"/>
-    </comp>
-    <comp lib="0" loc="(850,240)" name="Splitter">
-      <a name="facing" val="south"/>
-      <a name="fanout" val="10"/>
-      <a name="incoming" val="10"/>
-      <a name="appear" val="right"/>
-    </comp>
-    <comp lib="6" loc="(25,101)" name="Text">
-      <a name="text" val="You may only change the values of the inputs for testing using the hand tool."/>
-      <a name="font" val="DejaVu Sans plain 12"/>
       <a name="halign" val="left"/>
     </comp>
     <comp lib="0" loc="(850,180)" name="Pin">
@@ -1698,18 +1689,19 @@
       <a name="labelloc" val="east"/>
       <a name="labelfont" val="DejaVu Sans plain 12"/>
     </comp>
-    <comp lib="6" loc="(25,123)" name="Text">
-      <a name="text" val="Do not introduce any other input or output pins."/>
-      <a name="font" val="DejaVu Sans plain 12"/>
-      <a name="halign" val="left"/>
+    <comp lib="0" loc="(850,240)" name="Splitter">
+      <a name="facing" val="south"/>
+      <a name="fanout" val="10"/>
+      <a name="incoming" val="10"/>
+      <a name="appear" val="right"/>
     </comp>
-    <comp lib="6" loc="(318,229)" name="Text">
-      <a name="text" val="To your logic"/>
-      <a name="font" val="DejaVu Sans plain 12"/>
+    <comp lib="0" loc="(640,420)" name="Constant">
+      <a name="value" val="0x0"/>
     </comp>
-    <comp lib="6" loc="(786,229)" name="Text">
-      <a name="text" val="From your logic"/>
-      <a name="font" val="DejaVu Sans plain 12"/>
+    <comp lib="0" loc="(270,240)" name="Splitter">
+      <a name="facing" val="south"/>
+      <a name="fanout" val="10"/>
+      <a name="incoming" val="10"/>
     </comp>
     <comp lib="0" loc="(270,180)" name="Pin">
       <a name="facing" val="south"/>
@@ -1718,15 +1710,23 @@
       <a name="label" val="X"/>
       <a name="labelfont" val="DejaVu Sans plain 12"/>
     </comp>
-    <comp lib="6" loc="(24,77)" name="Text">
-      <a name="text" val="INPUT SECTION: Do not change anything here!"/>
-      <a name="font" val="DejaVu Sans bold 18"/>
+    <comp lib="6" loc="(25,101)" name="Text">
+      <a name="text" val="You may only change the values of the inputs for testing using the hand tool."/>
+      <a name="font" val="DejaVu Sans plain 12"/>
       <a name="halign" val="left"/>
     </comp>
-    <comp lib="6" loc="(23,32)" name="Text">
-      <a name="text" val="PROBLEM 5: 10-BIT LEFT NORMALIZER (LSH1)"/>
-      <a name="font" val="DejaVu Sans bold 18"/>
+    <comp lib="6" loc="(25,123)" name="Text">
+      <a name="text" val="Do not introduce any other input or output pins."/>
+      <a name="font" val="DejaVu Sans plain 12"/>
       <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(786,229)" name="Text">
+      <a name="text" val="From your logic"/>
+      <a name="font" val="DejaVu Sans plain 12"/>
+    </comp>
+    <comp lib="6" loc="(318,229)" name="Text">
+      <a name="text" val="To your logic"/>
+      <a name="font" val="DejaVu Sans plain 12"/>
     </comp>
   </circuit>
   <circuit name="P5_Mux11">
@@ -1766,45 +1766,9 @@
     <wire from="(90,220)" to="(90,280)"/>
     <wire from="(210,370)" to="(340,370)"/>
     <wire from="(210,310)" to="(210,370)"/>
-    <comp lib="0" loc="(150,280)" name="Bit Extender">
-      <a name="in_width" val="1"/>
-      <a name="out_width" val="10"/>
-      <a name="type" val="input"/>
-    </comp>
-    <comp lib="1" loc="(390,330)" name="AND Gate">
-      <a name="width" val="10"/>
-      <a name="inputs" val="2"/>
-    </comp>
     <comp lib="1" loc="(390,390)" name="AND Gate">
       <a name="width" val="10"/>
       <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="6" loc="(596,77)" name="Text">
-      <a name="text" val="OUTPUT SECTION: Do not change anything here!"/>
-      <a name="font" val="DejaVu Sans bold 18"/>
-      <a name="halign" val="left"/>
-    </comp>
-    <comp lib="1" loc="(280,310)" name="NOT Gate">
-      <a name="width" val="10"/>
-    </comp>
-    <comp lib="6" loc="(24,77)" name="Text">
-      <a name="text" val="INPUT SECTION: Do not change anything here!"/>
-      <a name="font" val="DejaVu Sans bold 18"/>
-      <a name="halign" val="left"/>
-    </comp>
-    <comp lib="0" loc="(230,180)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="width" val="10"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="A"/>
-      <a name="labelfont" val="DejaVu Sans plain 12"/>
-    </comp>
-    <comp lib="0" loc="(330,180)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="width" val="10"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="B"/>
-      <a name="labelfont" val="DejaVu Sans plain 12"/>
     </comp>
     <comp lib="0" loc="(850,180)" name="Pin">
       <a name="facing" val="south"/>
@@ -1815,18 +1779,41 @@
       <a name="labelloc" val="east"/>
       <a name="labelfont" val="DejaVu Sans plain 12"/>
     </comp>
+    <comp lib="0" loc="(230,180)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="width" val="10"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="A"/>
+      <a name="labelfont" val="DejaVu Sans plain 12"/>
+    </comp>
     <comp lib="6" loc="(786,229)" name="Text">
       <a name="text" val="From your logic"/>
       <a name="font" val="DejaVu Sans plain 12"/>
     </comp>
-    <comp lib="6" loc="(378,229)" name="Text">
-      <a name="text" val="To your logic"/>
+    <comp lib="6" loc="(25,101)" name="Text">
+      <a name="text" val="You may only change the values of the inputs for testing using the hand tool."/>
       <a name="font" val="DejaVu Sans plain 12"/>
+      <a name="halign" val="left"/>
     </comp>
-    <comp lib="0" loc="(160,170)" name="Pin">
+    <comp lib="0" loc="(150,280)" name="Bit Extender">
+      <a name="in_width" val="1"/>
+      <a name="out_width" val="10"/>
+      <a name="type" val="input"/>
+    </comp>
+    <comp lib="6" loc="(596,77)" name="Text">
+      <a name="text" val="OUTPUT SECTION: Do not change anything here!"/>
+      <a name="font" val="DejaVu Sans bold 18"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="1" loc="(390,330)" name="AND Gate">
+      <a name="width" val="10"/>
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="0" loc="(330,180)" name="Pin">
       <a name="facing" val="south"/>
+      <a name="width" val="10"/>
       <a name="tristate" val="false"/>
-      <a name="label" val="S"/>
+      <a name="label" val="B"/>
       <a name="labelfont" val="DejaVu Sans plain 12"/>
     </comp>
     <comp lib="1" loc="(550,360)" name="OR Gate">
@@ -1838,20 +1825,33 @@
       <a name="font" val="DejaVu Sans plain 12"/>
       <a name="halign" val="left"/>
     </comp>
+    <comp lib="6" loc="(599,101)" name="Text">
+      <a name="text" val="Do not introduce any other input or output pins."/>
+      <a name="font" val="DejaVu Sans plain 12"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(24,77)" name="Text">
+      <a name="text" val="INPUT SECTION: Do not change anything here!"/>
+      <a name="font" val="DejaVu Sans bold 18"/>
+      <a name="halign" val="left"/>
+    </comp>
     <comp lib="6" loc="(23,32)" name="Text">
       <a name="text" val="PROBLEM 5: 10-BIT LEFT NORMALIZER"/>
       <a name="font" val="DejaVu Sans bold 18"/>
       <a name="halign" val="left"/>
     </comp>
-    <comp lib="6" loc="(25,101)" name="Text">
-      <a name="text" val="You may only change the values of the inputs for testing using the hand tool."/>
-      <a name="font" val="DejaVu Sans plain 12"/>
-      <a name="halign" val="left"/>
+    <comp lib="1" loc="(280,310)" name="NOT Gate">
+      <a name="width" val="10"/>
     </comp>
-    <comp lib="6" loc="(599,101)" name="Text">
-      <a name="text" val="Do not introduce any other input or output pins."/>
+    <comp lib="6" loc="(378,229)" name="Text">
+      <a name="text" val="To your logic"/>
       <a name="font" val="DejaVu Sans plain 12"/>
-      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="0" loc="(160,170)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="S"/>
+      <a name="labelfont" val="DejaVu Sans plain 12"/>
     </comp>
   </circuit>
   <circuit name="P5_CLSH1">
@@ -1869,12 +1869,9 @@
     <wire from="(270,180)" to="(270,240)"/>
     <wire from="(530,50)" to="(530,200)"/>
     <wire from="(580,50)" to="(580,200)"/>
-    <comp lib="0" loc="(270,180)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="width" val="10"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="X"/>
-      <a name="labelfont" val="DejaVu Sans plain 12"/>
+    <comp lib="6" loc="(786,229)" name="Text">
+      <a name="text" val="From your logic"/>
+      <a name="font" val="DejaVu Sans plain 12"/>
     </comp>
     <comp lib="6" loc="(23,32)" name="Text">
       <a name="text" val="PROBLEM 5: 10-BIT LEFT NORMALIZER (CLSH1)"/>
@@ -1882,6 +1879,21 @@
       <a name="halign" val="left"/>
     </comp>
     <comp lib="6" loc="(599,101)" name="Text">
+      <a name="text" val="Do not introduce any other input or output pins."/>
+      <a name="font" val="DejaVu Sans plain 12"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(24,77)" name="Text">
+      <a name="text" val="INPUT SECTION: Do not change anything here!"/>
+      <a name="font" val="DejaVu Sans bold 18"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(596,77)" name="Text">
+      <a name="text" val="OUTPUT SECTION: Do not change anything here!"/>
+      <a name="font" val="DejaVu Sans bold 18"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(25,123)" name="Text">
       <a name="text" val="Do not introduce any other input or output pins."/>
       <a name="font" val="DejaVu Sans plain 12"/>
       <a name="halign" val="left"/>
@@ -1895,24 +1907,12 @@
       <a name="text" val="To your logic"/>
       <a name="font" val="DejaVu Sans plain 12"/>
     </comp>
-    <comp lib="6" loc="(24,77)" name="Text">
-      <a name="text" val="INPUT SECTION: Do not change anything here!"/>
-      <a name="font" val="DejaVu Sans bold 18"/>
-      <a name="halign" val="left"/>
-    </comp>
-    <comp lib="6" loc="(596,77)" name="Text">
-      <a name="text" val="OUTPUT SECTION: Do not change anything here!"/>
-      <a name="font" val="DejaVu Sans bold 18"/>
-      <a name="halign" val="left"/>
-    </comp>
-    <comp lib="6" loc="(786,229)" name="Text">
-      <a name="text" val="From your logic"/>
-      <a name="font" val="DejaVu Sans plain 12"/>
-    </comp>
-    <comp lib="6" loc="(25,123)" name="Text">
-      <a name="text" val="Do not introduce any other input or output pins."/>
-      <a name="font" val="DejaVu Sans plain 12"/>
-      <a name="halign" val="left"/>
+    <comp lib="0" loc="(270,180)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="width" val="10"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="X"/>
+      <a name="labelfont" val="DejaVu Sans plain 12"/>
     </comp>
     <comp lib="0" loc="(850,180)" name="Pin">
       <a name="facing" val="south"/>
