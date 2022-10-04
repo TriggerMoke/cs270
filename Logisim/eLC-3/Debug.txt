@@ -1,0 +1,468 @@
+ELC3 Grade: 84 / 120
+
+notTest Score: 4.000 / 4.000
+addiTest Score: 14.000 / 14.000
+addrTest Score: 14.000 / 14.000
+andiTest Score: 14.000 / 14.000
+andrTest Score: 14.000 / 14.000
+brnTakenTest Score: 4.000 / 4.000
+brnNotTakenTest Score: 4.000 / 4.000
+brzTakenTest Score: 4.000 / 4.000
+brzNotTakenTest Score: 4.000 / 4.000
+brpTakenTest Score: 4.000 / 4.000
+brpNotTakenTest Score: 4.000 / 4.000
+ldTest Score: 0 / 18.000
+stTest Score: 0 / 18.000
+---------------------------------------
+GRADING DETAILS
+
+grading based on file: eLC-3.circ
+
+--------------------------------------------------------
+TEST: notTest CMD LINE: ./gradeCircuit notTest 2>&1
+
+The cmd line is: timeout 0s ./gradeCircuit notTest 2>&1
+File: provided/notTest.hex
+v2.0 raw
+92bf
+
+
+Your Output/Master Output:
+
+Setting R0 to x0000                                                             Setting R0 to x0000
+Setting R1 to xFFFF                                                             Setting R1 to xFFFF
+Setting R2 to x1234                                                             Setting R2 to x1234
+Setting R3 to x0000                                                             Setting R3 to x0000
+Setting R4 to x0000                                                             Setting R4 to x0000
+Setting R5 to x0000                                                             Setting R5 to x0000
+Setting R6 to x0000                                                             Setting R6 to x0000
+Setting R7 to x0000                                                             Setting R7 to x0000
+Ticking the clock 1 cycle(s)...                                                 Ticking the clock 1 cycle(s)...
+MAR = x0000                                                                     MAR = x0000
+Ticking the clock 1 cycle(s)...                                                 Ticking the clock 1 cycle(s)...
+MDR = x92BF                                                                     MDR = x92BF
+Ticking the clock 1 cycle(s)...                                                 Ticking the clock 1 cycle(s)...
+IR = x92BF                                                                      IR = x92BF
+PC = x0001                                                                      PC = x0001
+Ticking the clock 1 cycle(s)...                                                 Ticking the clock 1 cycle(s)...
+R0 = x0000                                                                      R0 = x0000
+R1 = xEDCB                                                                      R1 = xEDCB
+R2 = x1234                                                                      R2 = x1234
+R3 = x0000                                                                      R3 = x0000
+R4 = x0000                                                                      R4 = x0000
+R5 = x0000                                                                      R5 = x0000
+R6 = x0000                                                                      R6 = x0000
+R7 = x0000                                                                      R7 = x0000
+CC = x0004                                                                      CC = x0004
+
+notTest Score: 4.000 / 4.000
+--------------------------------------------------------
+TEST: addiTest CMD LINE: ./gradeCircuit addiTest 2>&1
+
+The cmd line is: timeout 0s ./gradeCircuit addiTest 2>&1
+File: provided/addiTest.hex
+v2.0 raw
+1736
+
+
+Your Output/Master Output:
+
+Setting R0 to x0000                                                             Setting R0 to x0000
+Setting R1 to x0000                                                             Setting R1 to x0000
+Setting R2 to x0000                                                             Setting R2 to x0000
+Setting R3 to xFFFF                                                             Setting R3 to xFFFF
+Setting R4 to xFFF6                                                             Setting R4 to xFFF6
+Setting R5 to x0000                                                             Setting R5 to x0000
+Setting R6 to x0000                                                             Setting R6 to x0000
+Setting R7 to x0000                                                             Setting R7 to x0000
+Ticking the clock 1 cycle(s)...                                                 Ticking the clock 1 cycle(s)...
+MAR = x0000                                                                     MAR = x0000
+Ticking the clock 1 cycle(s)...                                                 Ticking the clock 1 cycle(s)...
+MDR = x1736                                                                     MDR = x1736
+Ticking the clock 1 cycle(s)...                                                 Ticking the clock 1 cycle(s)...
+IR = x1736                                                                      IR = x1736
+PC = x0001                                                                      PC = x0001
+Ticking the clock 1 cycle(s)...                                                 Ticking the clock 1 cycle(s)...
+R0 = x0000                                                                      R0 = x0000
+R1 = x0000                                                                      R1 = x0000
+R2 = x0000                                                                      R2 = x0000
+R3 = xFFEC                                                                      R3 = xFFEC
+R4 = xFFF6                                                                      R4 = xFFF6
+R5 = x0000                                                                      R5 = x0000
+R6 = x0000                                                                      R6 = x0000
+R7 = x0000                                                                      R7 = x0000
+CC = x0004                                                                      CC = x0004
+
+addiTest Score: 14.000 / 14.000
+--------------------------------------------------------
+TEST: addrTest CMD LINE: ./gradeCircuit addrTest 2>&1
+
+The cmd line is: timeout 0s ./gradeCircuit addrTest 2>&1
+File: provided/addrTest.hex
+v2.0 raw
+1b87
+
+
+Your Output/Master Output:
+
+Setting R0 to x0000                                                             Setting R0 to x0000
+Setting R1 to x0000                                                             Setting R1 to x0000
+Setting R2 to x0000                                                             Setting R2 to x0000
+Setting R3 to x0000                                                             Setting R3 to x0000
+Setting R4 to x0000                                                             Setting R4 to x0000
+Setting R5 to xFFFF                                                             Setting R5 to xFFFF
+Setting R6 to x00FF                                                             Setting R6 to x00FF
+Setting R7 to x00F0                                                             Setting R7 to x00F0
+Ticking the clock 1 cycle(s)...                                                 Ticking the clock 1 cycle(s)...
+MAR = x0000                                                                     MAR = x0000
+Ticking the clock 1 cycle(s)...                                                 Ticking the clock 1 cycle(s)...
+MDR = x1B87                                                                     MDR = x1B87
+Ticking the clock 1 cycle(s)...                                                 Ticking the clock 1 cycle(s)...
+IR = x1B87                                                                      IR = x1B87
+PC = x0001                                                                      PC = x0001
+Ticking the clock 1 cycle(s)...                                                 Ticking the clock 1 cycle(s)...
+R0 = x0000                                                                      R0 = x0000
+R1 = x0000                                                                      R1 = x0000
+R2 = x0000                                                                      R2 = x0000
+R3 = x0000                                                                      R3 = x0000
+R4 = x0000                                                                      R4 = x0000
+R5 = x01EF                                                                      R5 = x01EF
+R6 = x00FF                                                                      R6 = x00FF
+R7 = x00F0                                                                      R7 = x00F0
+CC = x0001                                                                      CC = x0001
+
+addrTest Score: 14.000 / 14.000
+--------------------------------------------------------
+TEST: andiTest CMD LINE: ./gradeCircuit andiTest 2>&1
+
+The cmd line is: timeout 0s ./gradeCircuit andiTest 2>&1
+File: provided/andiTest.hex
+v2.0 raw
+54ef
+
+
+Your Output/Master Output:
+
+Setting R0 to x0000                                                             Setting R0 to x0000
+Setting R1 to x0000                                                             Setting R1 to x0000
+Setting R2 to xFFFF                                                             Setting R2 to xFFFF
+Setting R3 to x1234                                                             Setting R3 to x1234
+Setting R4 to x0000                                                             Setting R4 to x0000
+Setting R5 to x0000                                                             Setting R5 to x0000
+Setting R6 to x0000                                                             Setting R6 to x0000
+Setting R7 to x0000                                                             Setting R7 to x0000
+Ticking the clock 1 cycle(s)...                                                 Ticking the clock 1 cycle(s)...
+MAR = x0000                                                                     MAR = x0000
+Ticking the clock 1 cycle(s)...                                                 Ticking the clock 1 cycle(s)...
+MDR = x54EF                                                                     MDR = x54EF
+Ticking the clock 1 cycle(s)...                                                 Ticking the clock 1 cycle(s)...
+IR = x54EF                                                                      IR = x54EF
+PC = x0001                                                                      PC = x0001
+Ticking the clock 1 cycle(s)...                                                 Ticking the clock 1 cycle(s)...
+R0 = x0000                                                                      R0 = x0000
+R1 = x0000                                                                      R1 = x0000
+R2 = x0004                                                                      R2 = x0004
+R3 = x1234                                                                      R3 = x1234
+R4 = x0000                                                                      R4 = x0000
+R5 = x0000                                                                      R5 = x0000
+R6 = x0000                                                                      R6 = x0000
+R7 = x0000                                                                      R7 = x0000
+CC = x0001                                                                      CC = x0001
+
+andiTest Score: 14.000 / 14.000
+--------------------------------------------------------
+TEST: andrTest CMD LINE: ./gradeCircuit andrTest 2>&1
+
+The cmd line is: timeout 0s ./gradeCircuit andrTest 2>&1
+File: provided/andrTest.hex
+v2.0 raw
+59c2
+
+
+Your Output/Master Output:
+
+Setting R0 to x0000                                                             Setting R0 to x0000
+Setting R1 to x0000                                                             Setting R1 to x0000
+Setting R2 to xABCD                                                             Setting R2 to xABCD
+Setting R3 to x0000                                                             Setting R3 to x0000
+Setting R4 to xFFFF                                                             Setting R4 to xFFFF
+Setting R5 to x0000                                                             Setting R5 to x0000
+Setting R6 to x0000                                                             Setting R6 to x0000
+Setting R7 to xFF00                                                             Setting R7 to xFF00
+Ticking the clock 1 cycle(s)...                                                 Ticking the clock 1 cycle(s)...
+MAR = x0000                                                                     MAR = x0000
+Ticking the clock 1 cycle(s)...                                                 Ticking the clock 1 cycle(s)...
+MDR = x59C2                                                                     MDR = x59C2
+Ticking the clock 1 cycle(s)...                                                 Ticking the clock 1 cycle(s)...
+IR = x59C2                                                                      IR = x59C2
+PC = x0001                                                                      PC = x0001
+Ticking the clock 1 cycle(s)...                                                 Ticking the clock 1 cycle(s)...
+R0 = x0000                                                                      R0 = x0000
+R1 = x0000                                                                      R1 = x0000
+R2 = xABCD                                                                      R2 = xABCD
+R3 = x0000                                                                      R3 = x0000
+R4 = xAB00                                                                      R4 = xAB00
+R5 = x0000                                                                      R5 = x0000
+R6 = x0000                                                                      R6 = x0000
+R7 = xFF00                                                                      R7 = xFF00
+CC = x0004                                                                      CC = x0004
+
+andrTest Score: 14.000 / 14.000
+--------------------------------------------------------
+TEST: brnTakenTest CMD LINE: ./gradeCircuit brnTakenTest 2>&1
+
+The cmd line is: timeout 0s ./gradeCircuit brnTakenTest 2>&1
+File: provided/brnTakenTest.hex
+v2.0 raw
+0805
+0000
+0000
+0000
+0000
+0000
+ffff
+
+
+Your Output/Master Output:
+
+Setting CC to x0004                                                             Setting CC to x0004
+Ticking the clock 1 cycle(s)...                                                 Ticking the clock 1 cycle(s)...
+MAR = x0000                                                                     MAR = x0000
+Ticking the clock 1 cycle(s)...                                                 Ticking the clock 1 cycle(s)...
+MDR = x0805                                                                     MDR = x0805
+Ticking the clock 1 cycle(s)...                                                 Ticking the clock 1 cycle(s)...
+IR = x0805                                                                      IR = x0805
+PC = x0001                                                                      PC = x0001
+Ticking the clock 1 cycle(s)...                                                 Ticking the clock 1 cycle(s)...
+PC = x0006                                                                      PC = x0006
+
+brnTakenTest Score: 4.000 / 4.000
+--------------------------------------------------------
+TEST: brnNotTakenTest CMD LINE: ./gradeCircuit brnNotTakenTest 2>&1
+
+The cmd line is: timeout 0s ./gradeCircuit brnNotTakenTest 2>&1
+File: provided/brnNotTakenTest.hex
+v2.0 raw
+0805
+0000
+0000
+0000
+0000
+0000
+ffff
+
+
+Your Output/Master Output:
+
+Setting CC to x0002                                                             Setting CC to x0002
+Ticking the clock 1 cycle(s)...                                                 Ticking the clock 1 cycle(s)...
+MAR = x0000                                                                     MAR = x0000
+Ticking the clock 1 cycle(s)...                                                 Ticking the clock 1 cycle(s)...
+MDR = x0805                                                                     MDR = x0805
+Ticking the clock 1 cycle(s)...                                                 Ticking the clock 1 cycle(s)...
+IR = x0805                                                                      IR = x0805
+PC = x0001                                                                      PC = x0001
+Ticking the clock 1 cycle(s)...                                                 Ticking the clock 1 cycle(s)...
+PC = x0002                                                                      PC = x0002
+
+brnNotTakenTest Score: 4.000 / 4.000
+--------------------------------------------------------
+TEST: brzTakenTest CMD LINE: ./gradeCircuit brzTakenTest 2>&1
+
+The cmd line is: timeout 0s ./gradeCircuit brzTakenTest 2>&1
+File: provided/brzTakenTest.hex
+v2.0 raw
+0405
+0000
+0000
+0000
+0000
+0000
+ffff
+
+
+Your Output/Master Output:
+
+Setting CC to x0002                                                             Setting CC to x0002
+Ticking the clock 1 cycle(s)...                                                 Ticking the clock 1 cycle(s)...
+MAR = x0000                                                                     MAR = x0000
+Ticking the clock 1 cycle(s)...                                                 Ticking the clock 1 cycle(s)...
+MDR = x0405                                                                     MDR = x0405
+Ticking the clock 1 cycle(s)...                                                 Ticking the clock 1 cycle(s)...
+IR = x0405                                                                      IR = x0405
+PC = x0001                                                                      PC = x0001
+Ticking the clock 1 cycle(s)...                                                 Ticking the clock 1 cycle(s)...
+PC = x0006                                                                      PC = x0006
+
+brzTakenTest Score: 4.000 / 4.000
+--------------------------------------------------------
+TEST: brzNotTakenTest CMD LINE: ./gradeCircuit brzNotTakenTest 2>&1
+
+The cmd line is: timeout 0s ./gradeCircuit brzNotTakenTest 2>&1
+File: provided/brzNotTakenTest.hex
+v2.0 raw
+0405
+0000
+0000
+0000
+0000
+0000
+ffff
+
+
+Your Output/Master Output:
+
+Setting CC to x0001                                                             Setting CC to x0001
+Ticking the clock 1 cycle(s)...                                                 Ticking the clock 1 cycle(s)...
+MAR = x0000                                                                     MAR = x0000
+Ticking the clock 1 cycle(s)...                                                 Ticking the clock 1 cycle(s)...
+MDR = x0405                                                                     MDR = x0405
+Ticking the clock 1 cycle(s)...                                                 Ticking the clock 1 cycle(s)...
+IR = x0405                                                                      IR = x0405
+PC = x0001                                                                      PC = x0001
+Ticking the clock 1 cycle(s)...                                                 Ticking the clock 1 cycle(s)...
+PC = x0002                                                                      PC = x0002
+
+brzNotTakenTest Score: 4.000 / 4.000
+--------------------------------------------------------
+TEST: brpTakenTest CMD LINE: ./gradeCircuit brpTakenTest 2>&1
+
+The cmd line is: timeout 0s ./gradeCircuit brpTakenTest 2>&1
+File: provided/brpTakenTest.hex
+v2.0 raw
+0205
+0000
+0000
+0000
+0000
+0000
+ffff
+
+
+Your Output/Master Output:
+
+Setting CC to x0001                                                             Setting CC to x0001
+Ticking the clock 1 cycle(s)...                                                 Ticking the clock 1 cycle(s)...
+MAR = x0000                                                                     MAR = x0000
+Ticking the clock 1 cycle(s)...                                                 Ticking the clock 1 cycle(s)...
+MDR = x0205                                                                     MDR = x0205
+Ticking the clock 1 cycle(s)...                                                 Ticking the clock 1 cycle(s)...
+IR = x0205                                                                      IR = x0205
+PC = x0001                                                                      PC = x0001
+Ticking the clock 1 cycle(s)...                                                 Ticking the clock 1 cycle(s)...
+PC = x0006                                                                      PC = x0006
+
+brpTakenTest Score: 4.000 / 4.000
+--------------------------------------------------------
+TEST: brpNotTakenTest CMD LINE: ./gradeCircuit brpNotTakenTest 2>&1
+
+The cmd line is: timeout 0s ./gradeCircuit brpNotTakenTest 2>&1
+File: provided/brpNotTakenTest.hex
+v2.0 raw
+0205
+0000
+0000
+0000
+0000
+0000
+ffff
+
+
+Your Output/Master Output:
+
+Setting CC to x0004                                                             Setting CC to x0004
+Ticking the clock 1 cycle(s)...                                                 Ticking the clock 1 cycle(s)...
+MAR = x0000                                                                     MAR = x0000
+Ticking the clock 1 cycle(s)...                                                 Ticking the clock 1 cycle(s)...
+MDR = x0205                                                                     MDR = x0205
+Ticking the clock 1 cycle(s)...                                                 Ticking the clock 1 cycle(s)...
+IR = x0205                                                                      IR = x0205
+PC = x0001                                                                      PC = x0001
+Ticking the clock 1 cycle(s)...                                                 Ticking the clock 1 cycle(s)...
+PC = x0002                                                                      PC = x0002
+
+brpNotTakenTest Score: 4.000 / 4.000
+--------------------------------------------------------
+TEST: ldTest CMD LINE: ./gradeCircuit ldTest 2>&1
+
+The cmd line is: timeout 0s ./gradeCircuit ldTest 2>&1
+File: provided/ldTest.hex
+v2.0 raw
+2008
+0000
+0000
+0000
+0000
+0000
+0000
+0000
+0000
+1234
+
+
+Your Output/Master Output:
+
+Setting R0 to xFFFF                                                             Setting R0 to xFFFF
+Setting R1 to x0000                                                             Setting R1 to x0000
+Setting R2 to x0000                                                             Setting R2 to x0000
+Setting R3 to x0000                                                             Setting R3 to x0000
+Setting R4 to x0000                                                             Setting R4 to x0000
+Setting R5 to x0000                                                             Setting R5 to x0000
+Setting R6 to x0000                                                             Setting R6 to x0000
+Setting R7 to x0000                                                             Setting R7 to x0000
+Ticking the clock 1 cycle(s)...                                                 Ticking the clock 1 cycle(s)...
+MAR = x0000                                                                     MAR = x0000
+Ticking the clock 1 cycle(s)...                                                 Ticking the clock 1 cycle(s)...
+MDR = x2008                                                                     MDR = x2008
+Ticking the clock 1 cycle(s)...                                                 Ticking the clock 1 cycle(s)...
+IR = x2008                                                                      IR = x2008
+PC = x0001                                                                      PC = x0001
+Ticking the clock 3 cycle(s)...                                                 Ticking the clock 3 cycle(s)...
+// R0 = xFFFF                                                                |     R0 = x1234
+R1 = x0000                                                                      R1 = x0000
+R2 = x0000                                                                      R2 = x0000
+R3 = x0000                                                                      R3 = x0000
+R4 = x0000                                                                      R4 = x0000
+R5 = x0000                                                                      R5 = x0000
+R6 = x0000                                                                      R6 = x0000
+R7 = x0000                                                                      R7 = x0000
+// CC = x0000                                                                |     CC = x0001
+
+ldTest Score: 0 / 18.000
+--------------------------------------------------------
+TEST: stTest CMD LINE: ./gradeCircuit stTest 2>&1
+
+The cmd line is: timeout 0s ./gradeCircuit stTest 2>&1
+File: provided/stTest.hex
+v2.0 raw
+3205
+0000
+0000
+0000
+0000
+0000
+ffff
+
+
+Your Output/Master Output:
+
+Setting R0 to x0000                                                             Setting R0 to x0000
+Setting R1 to x1234                                                             Setting R1 to x1234
+Setting R2 to x0000                                                             Setting R2 to x0000
+Setting R3 to x0000                                                             Setting R3 to x0000
+Setting R4 to x0000                                                             Setting R4 to x0000
+Setting R5 to x0000                                                             Setting R5 to x0000
+Setting R6 to x0000                                                             Setting R6 to x0000
+Setting R7 to x0000                                                             Setting R7 to x0000
+Ticking the clock 1 cycle(s)...                                                 Ticking the clock 1 cycle(s)...
+MAR = x0000                                                                     MAR = x0000
+Ticking the clock 1 cycle(s)...                                                 Ticking the clock 1 cycle(s)...
+MDR = x3205                                                                     MDR = x3205
+Ticking the clock 1 cycle(s)...                                                 Ticking the clock 1 cycle(s)...
+IR = x3205                                                                      IR = x3205
+PC = x0001                                                                      PC = x0001
+Ticking the clock 3 cycle(s)...                                                 Ticking the clock 3 cycle(s)...
+MEM[x0006] = xFFFF                                                        |     MEM[x0006] = x1234
+
+stTest Score: 0 / 18.000
+--------------------------------------------------------
