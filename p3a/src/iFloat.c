@@ -27,7 +27,7 @@ Sign Expo Fraction*/
 /** @todo Implement based on documentation contained in iFloat.h */
 iFloat_t floatGetSign (iFloat_t x) {
   int mask = 1<<15;
-    if ((x&mask)==mask) return 1;
+    if ((x & mask)==mask) return 1;
   return 0; /* implement this */
 }
 
@@ -43,13 +43,20 @@ iFloat_t floatGetExp (iFloat_t x) {
 }
 
 /** @todo Implement based on documentation contained in iFloat.h */
+/*16 bit IEEE
+// 1 11111 1111111111
+//One Five 10
+Sign Expo Fraction*/
 iFloat_t floatGetVal (iFloat_t x) {
-  int mask = 0, temp = 0;
-  mask = 1 << 10;
-  mask = mask - 1;
-  temp = x & mask;
-  mask = 1 << 10;
-  temp = temp | mask;
+  int temp = 1;
+  //-0.09375 sign: 1 exp: 11 val: 1111-1010-0000-0000
+  temp <<= 10;
+
+  temp = temp | (x & 0x03FF);
+
+  if(floatGetSign(x) == 1)
+    temp = ~(temp) + 1;
+
   return temp;
 }
 
@@ -72,15 +79,12 @@ Sign Expo Fraction*/
 
 /** @todo Implement based on documentation contained in iFloat.h */
 iFloat_t floatLeftMost1 (iFloat_t bits) {
-  int temp = bits;
+  
   for(int i = 15; i >= 0; i--){
-    temp = temp >> i;
-    int mask = i;
-    if((temp & mask) == 1){
+    if((bits >> i) & 1)
       return i;
-    }
-
   }
+  
   return -1;
 }
 
@@ -123,47 +127,62 @@ Sign Expo Fraction*/
 iFloat_t floatAdd (iFloat_t x, iFloat_t y) {
   debug("%s: bits of x (IEEE 754)", getBinary(x)); // example only
   debug("%s: bits of y (IEEE 754)", getBinary(y)); // example only
+  
+  /*
+
+    -125.75 + 63.125 --> -62.625000
+    
+  */
 
   if(x == 0)
     return y;
   if(y == 0)
     return x;
 
+  if((x < 0 || y < 0) && (floatAbs(x) == y ||  floatAbs(y) == x))
+    return 0.0;
+
   //Step 1: Extract the exponent and value
   //x        Sign                    Exponent             Fraction/Value
-  int xSign = floatGetSign(x), xExpo = floatGetExp(x), xFrac = floatGetVal(x);
+  int  xExpo = floatGetExp(x), xVal = floatGetVal(x);
   //y        Sign                    Exponent             Fraction/Value
-  int ySign = floatGetSign(y), yExpo = floatGetExp(y), yFrac = floatGetVal(y);
+  int  yExpo = floatGetExp(y), yVal = floatGetVal(y);
+
+  /*
+  if(xSign == 1){
+    xVal = ~xVal;
+    xVal += 1;
+  }
+  if(ySign == 1){
+    yVal = ~yVal;
+    yVal += 1;
+  }*/
+  
+
 
   //Step 2: Equalize the exponents
   if(xExpo < yExpo){
     int temp = yExpo - xExpo;
-    xFrac = xFrac >> temp;
+    xVal = xVal >> temp;
     xExpo += temp;
   }
 
   if(yExpo < xExpo){
     int temp = xExpo - yExpo;
-    yFrac = yFrac >> temp;
+    yVal = yVal >> temp;
     yExpo += temp;
   }
 
-  if(xSign == 1){
-    xFrac = ~xFrac;
-    xFrac += 1;
-  }
-  if(ySign == 1){
-    yFrac = ~yFrac;
-    yFrac += 1;
-  }
+  
 
   //Step 3: Integer addition
-  int xy = xFrac + yFrac;
+  int xy = xVal + yVal;
+  //printf("Xy Val: %d", xy);
 
-/*16 bit IEEE
-// 1 11111 1111111111
-//One Five 10
-Sign Expo Fraction*/
+  /*16 bit IEEE
+  // 1 11111 1111111111
+  //One Five 10
+  Sign Expo Fraction*/
 
   //Step 4: Convert the two's complement back to sign-magnitude
   int xySign = floatGetSign(xy);
@@ -171,6 +190,33 @@ Sign Expo Fraction*/
     xy = ~xy;
     xy += 1;
   }
+
+//Step 5: Normalize the result
+
+  int shift = 10 - floatLeftMost1(xy);
+
+  xy = xy << shift;
+  xExpo -= shift;
+
+  
+
+  //Step 6: Re-assemble all the components of the result into a 16-bit value
+  int temp = 0;
+
+  temp |= (xySign << 15);
+  temp |= (xExpo << 10);
+  temp |= (xy & 0x03FF);
+  
+  return temp;
+}
+
+/** @todo Implement based on documentation contained in iFloat.h */
+iFloat_t floatSub (iFloat_t x, iFloat_t y) {
+  return floatAdd(x, floatNegate(y));
+}
+
+
+/*
   xySign = xySign << 15;
   int starting = 10, mask = 0;
   for(int i = 15; i >= 0; i--){
@@ -183,7 +229,8 @@ Sign Expo Fraction*/
     }
 
   }
-  //Step 5: Normalize the result
+  
+  
   while(starting > 10){
     xy = xy >> 1;
     xExpo += 1;
@@ -199,17 +246,4 @@ Sign Expo Fraction*/
   xy = floatGetVal(xy);
   mask = 0;
   mask = 1 << 10;
-  xy ^= mask;
-  //Step 6: Re-assemble all the components of the result into a 16-bit value
-  int temp = 0;
-  temp |= xExpo;
-  temp |= xySign;
-  temp |= xy;
-  return temp;
-}
-
-/** @todo Implement based on documentation contained in iFloat.h */
-iFloat_t floatSub (iFloat_t x, iFloat_t y) {
-  return floatAdd(x, floatNegate(y));
-}
-
+  xy ^= mask;*/
